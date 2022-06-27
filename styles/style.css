@@ -26,6 +26,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
 .header_menu, .block_content, .footer_container {
     width: var(--max-width-container);
 }
@@ -461,6 +466,31 @@ ul {
 .slider_list {
     display: flex;
     gap: 15px;
+
+    position: relative;
+    z-index: 10;
+}
+
+.slider_list>img {
+    position: absolute;
+    z-index: 0;
+    transform: rotate(-78.72deg);
+    overflow: hidden !important;
+}
+
+#first__footprint {
+    bottom: 32px;
+    left: -192px;
+}
+
+#second__footprint {
+    bottom: -82px;
+    left: 417px;
+}
+
+#therd__footprint {
+    top: -66px;
+    right: -100px;
 }
 
 .slider_item {
@@ -468,11 +498,17 @@ ul {
     height: 442px;
     background: url("../img/slider_item.png") no-repeat;
     position: relative;
+    z-index: 10;
 
     border-radius: 15px;
 }
 
-#play_icon {
+.slider_item .slider_item_image {
+    position: relative;
+    z-index: 10;
+}
+
+.play_icon {
     position: absolute;
     top: 50%;
     left: 46%;
