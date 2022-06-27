@@ -1,0 +1,341 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+    --min-width: 320px;
+    --max-width: 1920px;
+    --max-width-container: 1144px;
+    --md1: 991.98px;
+    --md2: 767.98px;
+    --md3: 479.98px;
+    --text-color: #03CB2F;
+    --widgets-color: #069F47;
+    --blocks-background: #343434;
+    --titles-color: #101D14;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header_menu, .block_content, .footer_container {
+    width: var(--max-width-container);
+}
+
+.header {
+    height: 130px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Montserrat;
+
+    background: var(--blocks-background);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: relative;
+    z-index: 10;
+}
+
+.header_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_menu_logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 81px;
+    height: 62px;
+}
+
+.header_menu_logo .logo_title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 125.4%;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    margin-left: 16px;
+}
+
+.menu_list {
+    list-style-type: none;
+
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+}
+
+.menu_list li {
+    margin-right: 30px;
+}
+
+.menu_list .menu_link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    color: #fff;
+    text-decoration: none;
+
+    padding-bottom: 4.5px;
+}
+
+.menu_link.active {
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}
+
+.phone_and_social_links .phone {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+
+    color: #fff;
+
+    opacity: 0.9;
+
+    margin-bottom: 17px;
+}
+
+.phone_and_social_links .social_links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#middle_link_image {
+    margin: 0px 15px 0px 17px;
+}
+
+.main_content_container {
+    font-family: Montserrat;
+    position: relative;
+}
+
+.ten_lessons_block {
+    display: flex;
+    justify-content: center;
+
+    background: url("../img/car_background.png") center no-repeat;
+}
+
+.ten_lessons_block .block_title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 80px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    margin-bottom: 54px;
+}
+
+.ten_lessons_block .block_subtitle {
+    font-weight: 500;
+    font-size: 30px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    margin-bottom: 36px;
+}
+
+.block_content {
+    padding-top: 220px;
+}
+
+.block_content .link_button {
+    padding: 17px 36px 22px 36px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
+    background: #069F47;
+    box-shadow: 0px 6px 4px rgba(9, 77, 32, 0.2);
+    border: none;
+    border-radius: 50px;
+
+    margin-bottom: 22px;
+}
+
+.block_content .block_other_info {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    padding-bottom: 235px;
+}
+
+.achievements_block {
+    background: url("../img/asphalt_back.png") no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievements_block .block_content {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.achievments_block_up {
+    position: absolute;
+    top: -70px;
+}
+
+.achievments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.achievments .achievment {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+
+    padding: 33px 40px 51px 40px;
+
+    margin-right: 19px;
+}
+
+.achievment .achievment_content {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+
+    width: 194px;
+
+    color: #000000;
+}
+
+.work_on_result_block {
+    display: flex;
+    justify-content: center;
+    padding-top: 11px;
+}
+
+.work_on_result_block .block_content {
+    padding: 0;
+}
+
+.work_on_result_block .block_content .main-content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.work_on_result_block .block_title {
+    padding-bottom: 55px;
+    position: relative;
+}
+
+.block_title {
+    position: relative;
+}
+
+.block_title h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+
+    color: rgba(16, 29, 20, 0.2);
+}
+
+.block_title .block_subtitle {
+    position: absolute;
+    bottom: 45px;
+    left: 2px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+
+
+    color: #101D14;
+
+}
+
+.block_content .main_content .what_we_do_list {
+    list-style-image: url("../img/list.svg");
+}
+
+.main_info {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+}
+
+.main_info .biography {
+    width: 750px;
+    padding-right: 30px;
+}
+
+.main_info .what_we_do_list {
+    padding-left: 1.2rem;
+}
+
+.main_info .biography>p {
+    margin-bottom: 0;
+}
+
+#koval_photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.work_on_result_block .main_info .other_info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.work_on_result_block .main_info .other_info>p {
+    width: 301px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    margin-right: 43px;
+}
+
+.work_on_result_block .main_info .other_info .link_button {
+    padding: 16.69px 49px 16.69px 49px;
+}
