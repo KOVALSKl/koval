@@ -11,6 +11,7 @@
     --md2: 767.98px;
     --md3: 479.98px;
     --text-color: #03CB2F;
+    --text-active-color: #107D3E;
     --widgets-color: #069F47;
     --blocks-background: #343434;
     --titles-color: #101D14;
@@ -79,13 +80,10 @@ html {
     list-style-type: none;
 
     display: flex;
+    gap: 30px;
 
     margin: 0;
     padding: 0;
-}
-
-.menu_list li {
-    margin-right: 30px;
 }
 
 .menu_list .menu_link {
@@ -130,11 +128,14 @@ html {
     position: relative;
 }
 
-.ten_lessons_block {
+.block_container {
     display: flex;
     justify-content: center;
+}
 
+.ten_lessons_block {
     background: url("../img/car_background.png") center no-repeat;
+    background-size: cover;
 }
 
 .ten_lessons_block .block_title {
@@ -201,8 +202,7 @@ html {
 
 .achievements_block {
     background: url("../img/asphalt_back.png") no-repeat center;
-    display: flex;
-    justify-content: center;
+    background-size: cover;
     align-items: center;
 }
 
@@ -218,17 +218,24 @@ html {
 
 .achievments {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 19px;
 }
 
 .achievments .achievment {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
+    box-sizing: border-box;
 
-    padding: 33px 40px 51px 40px;
+    padding: 22px 38px 44px 38px;
+    text-align: center;
 
-    margin-right: 19px;
+    width: 270px;
+}
+
+.achievment img {
+    margin-bottom: 12px;
 }
 
 .achievment .achievment_content {
@@ -237,14 +244,10 @@ html {
     font-weight: 600;
     font-size: 18px;
 
-    width: 194px;
-
     color: #000000;
 }
 
 .work_on_result_block {
-    display: flex;
-    justify-content: center;
     padding-top: 11px;
 }
 
@@ -258,9 +261,8 @@ html {
     font-size: 16px;
 }
 
-.work_on_result_block .block_title {
-    padding-bottom: 55px;
-    position: relative;
+.block_title {
+    margin-bottom: 55px;
 }
 
 .block_title {
@@ -278,7 +280,7 @@ html {
 
 .block_title .block_subtitle {
     position: absolute;
-    bottom: 45px;
+    bottom: -17px;
     left: 2px;
 
     font-family: 'Montserrat';
@@ -291,19 +293,23 @@ html {
 
 }
 
-.block_content .main_content .what_we_do_list {
+ul {
     list-style-image: url("../img/list.svg");
 }
 
 .main_info {
     display: flex;
     flex-direction: column;
-    width: 750px;
 }
 
 .main_info .biography {
     width: 750px;
-    padding-right: 30px;
+    padding-right: 25px;
+}
+
+.main_info .biography .active {
+    color: var(--text-active-color);
+    text-decoration: underline;
 }
 
 .main_info .what_we_do_list {
@@ -338,4 +344,143 @@ html {
 
 .work_on_result_block .main_info .other_info .link_button {
     padding: 16.69px 49px 16.69px 49px;
+}
+
+.services_block .block_content {
+    padding-top: 94px;
+    padding-bottom: 160px;
+}
+
+.tariffs {
+    display: flex;
+    gap: 16px;
+    position: relative;
+}
+
+#tarrifs_wheel {
+    position: absolute;
+    width: 200px;
+    left: 295px;
+    bottom: -110px;
+
+    transform: rotate(15deg);
+}
+
+.tariff {
+    background: #FFFFFF;
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 370px !important;
+    padding-bottom: 56px;
+
+    position: relative;
+    z-index: 10;
+}
+
+.tariff .tariff_header {
+    padding: 65px 20px 26px 40px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #101D14;
+}
+
+.tariff .tariff_body .sub_info {
+    padding-bottom: 1rem;
+}
+
+.tariff .tariff_body {
+    padding-left: 40px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.tariff_body ul {
+    padding-left: 12px;
+}
+
+.tariff_body .main_info {
+    padding-right: 20px;
+    margin-bottom: 29px;
+}
+
+.tariff_footer {
+    text-align: center;
+}
+
+.tariff_footer .link_button {
+    padding: 16px 36px 19px 36px;
+    width: 314px;
+}
+
+.studying_time_block {
+    background: url("../img/studying_time_back.jpg") no-repeat;
+    background-size: cover;
+}
+
+.studying_time_block .block_content {
+    padding-top: 171px;
+    padding-bottom: 190px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.studying_time_block .main_content {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
+    text-align: left;
+}
+
+.about_my_work_block {
+    padding-bottom: 66px;
+}
+
+.about_my_work_block .block_title {
+    margin-bottom: 68px;
+}
+
+.about_my_work_block .block_content {
+    padding-top: 42px;
+}
+
+.slider_list {
+    display: flex;
+    gap: 15px;
+}
+
+.slider_item {
+    width: 370px;
+    height: 442px;
+    background: url("../img/slider_item.png") no-repeat;
+    position: relative;
+
+    border-radius: 15px;
+}
+
+#play_icon {
+    position: absolute;
+    top: 50%;
+    left: 46%;
+}
+
+.slider_controllers {
+    padding: 22px;
+
+    display: flex;
+    justify-content: space-between;
 }
