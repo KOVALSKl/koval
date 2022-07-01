@@ -12,6 +12,7 @@
     --md3: 479.98px;
     --text-color: #03CB2F;
     --text-active-color: #107D3E;
+    --tariffs-buttons-color: #AD0C0C;
     --widgets-color: #069F47;
     --blocks-background: #343434;
     --titles-color: #101D14;
@@ -139,8 +140,8 @@ html {
 }
 
 .ten_lessons_block {
-    background: url("../img/car_background.png") center no-repeat;
-    background-size: cover;
+    background: url("../img/car_background.png") 0px -110px no-repeat;
+    /* background-size: cover; */
 }
 
 .ten_lessons_block .block_title {
@@ -168,11 +169,13 @@ html {
 }
 
 .block_content {
-    padding-top: 220px;
+    padding-top: 130px;
 }
 
 .block_content .link_button {
-    padding: 17px 36px 22px 36px;
+    padding: 16px 36px 19px 36px;
+
+    height: 55px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -207,8 +210,9 @@ html {
 
 .achievements_block {
     background: url("../img/asphalt_back.png") no-repeat center;
-    background-size: cover;
+    height: 274px;
     align-items: center;
+    margin-top: -20px;
 }
 
 .achievements_block .block_content {
@@ -218,7 +222,7 @@ html {
 
 .achievments_block_up {
     position: absolute;
-    top: -70px;
+    top: -110px;
 }
 
 .achievments {
@@ -356,13 +360,13 @@ ul {
     padding-bottom: 160px;
 }
 
-.tariffs {
+.services {
     display: flex;
     gap: 16px;
     position: relative;
 }
 
-#tarrifs_wheel {
+#services_wheel {
     position: absolute;
     width: 200px;
     left: 295px;
@@ -371,7 +375,7 @@ ul {
     transform: rotate(15deg);
 }
 
-.tariff {
+.service {
     background: #FFFFFF;
     box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
@@ -382,7 +386,7 @@ ul {
     z-index: 10;
 }
 
-.tariff .tariff_header {
+.service .service_header {
     padding: 65px 20px 26px 40px;
 
     font-family: 'Montserrat';
@@ -393,11 +397,11 @@ ul {
     color: #101D14;
 }
 
-.tariff .tariff_body .sub_info {
+.service .service_body .sub_info {
     padding-bottom: 1rem;
 }
 
-.tariff .tariff_body {
+.service .service_body {
     padding-left: 40px;
 
     font-family: 'Montserrat';
@@ -406,22 +410,93 @@ ul {
     font-size: 16px;
 }
 
-.tariff_body ul {
+.service_body ul {
     padding-left: 12px;
 }
 
-.tariff_body .main_info {
+.service_body .main_info {
     padding-right: 20px;
     margin-bottom: 29px;
 }
 
-.tariff_footer {
+.service_footer {
     text-align: center;
 }
 
-.tariff_footer .link_button {
+.service_footer .link_button {
     padding: 16px 36px 19px 36px;
     width: 314px;
+}
+
+.tariffs_block .block_content {
+    padding-top: 18px;
+    padding-bottom: 65px;
+}
+
+.tariffs {
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+
+#main_road_sign {
+    position: absolute;
+    width: 201px;
+    top: -98px;
+    right: -62px;
+}
+
+.tariffs .link_button {
+    background-color: var(--tariffs-buttons-color);
+}
+
+.tariffs .service .service_footer .price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+
+    color: #101D14;
+
+    text-align: left;
+    padding-left: 40px;
+
+    position: relative;
+
+    padding-bottom: 45px;
+
+    word-spacing: 3px;
+}
+
+.tariffs .service_footer .old_price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+    color: rgba(16, 29, 20, 0.7);
+
+    position: relative;
+}
+
+.first_line, .second_line {
+    height: 0;
+    width: 76.16px;
+    border: 1px solid #424242;
+
+    position: absolute;
+}
+
+.first_line {
+    top: 11px;
+    right: 110px;
+    transform: matrix(0.97, -0.24, 0.23, 0.97, 0, 0);
+}
+
+.second_line {
+    top: 11px;
+    right: 110px;
+    transform: matrix(0.97, 0.24, -0.23, 0.97, 0, 0);
 }
 
 .studying_time_block {
@@ -519,4 +594,156 @@ ul {
 
     display: flex;
     justify-content: space-between;
+}
+
+.benefits_block {
+    background: url("../img/benefits_background.png") no-repeat;
+}
+
+.benefits_block .block_content {
+    padding-bottom: 65px;
+}
+
+.benefits {
+    display: flex;
+    gap: 15px;
+}
+
+.benefit {
+    width: 274px !important;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 0 !important;
+}
+
+.benefit_title {
+    padding: 52px 11px 54px 38px;
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+
+    color: #000000;
+}
+
+.benefit_body {
+    padding: 0px 10px 72px 36px;
+}
+
+.benefit_body ul {
+    padding: 0;
+}
+
+.learning_process_block {
+    background: #303030;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+    top: -1px;
+
+    padding-bottom: 51px;
+}
+
+.learning_process_block .block_title h1 {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.learning_process_block .block_title h2, .roadtotherules .block_title h2 {
+    color: #FFFFFF;
+}
+
+.learning_process_block .slider_item {
+    background: url("../img/second_slider.png");
+    height: 642px;
+}
+
+.learning_process_block .slider_controllers {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.autoschool_licenses_block {
+    position: relative;
+    top: -1px;
+
+    padding-bottom: 122px;
+}
+
+.autoschool_licenses_block .block_title {
+    padding-top: 80px;
+    position: relative;
+    z-index: 10;
+}
+
+#licenses_background {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.licenses {
+    gap: 19px;
+}
+
+.license {
+    width: 274px !important;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.15));
+}
+
+.license img {
+    width: 100%;
+}
+
+.roadtotherules {
+    background: url("../img/studying_time_back.jpg") no-repeat;
+    /* background-size: cover; */
+    padding-top: 30px;
+    padding-bottom: 209px;
+}
+
+.roadtotherules .block_title h1 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.roadtotherules ul {
+    padding: 0;
+    list-style: armenian;
+}
+
+.step {
+    width: 466px !important;
+
+    background: #FFFFFF;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+
+    margin-right: 111px;
+    margin-bottom: 34px;
+
+    display: flex;
+    align-items: center;
+}
+
+.step .step_number {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+
+    color: rgba(16, 125, 62, 0.2);
+
+    padding-left: 34px;
+    padding-right: 25px;
+}
+
+.step .step_body {
+    padding-top: 39px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+
+.roadtotherules .link_button {
+    width: 334px;
+    margin-left: -10px;
 }
