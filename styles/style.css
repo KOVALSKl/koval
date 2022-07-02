@@ -109,24 +109,46 @@ html {
 }
 
 .phone_and_social_links .phone {
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
+    font-weight: 600;
+    font-size: 15px;
 
-    color: #fff;
+    color: #FFFFFF;
 
     opacity: 0.9;
 
-    margin-bottom: 17px;
+    margin-bottom: 9px;
+    text-align: center;
+}
+
+.phone_and_social_links .insta_tag {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #FFFFFF;
+
+    opacity: 0.9;
+
+    text-align: center;
+    margin-top: 5px;
+}
+
+.phone_and_social_links .dangerous_organization {
+    position: relative;
+}
+
+.phone_and_social_links .dangerous_organization span {
+    color: #fff;
+    position: absolute;
+    top: -5px;
 }
 
 .phone_and_social_links .social_links {
     display: flex;
-    justify-content: flex-end;
-}
-
-#middle_link_image {
-    margin: 0px 15px 0px 17px;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 .main_content_container {
@@ -140,10 +162,8 @@ html {
 }
 
 .ten_lessons_block {
-    background: url("../img/car_background.png") 0px -110px no-repeat;
-    background-position: center center;
-
-    /* background-size: contain; */
+    background: url("../img/car_background.png") center center no-repeat;
+    background-size: cover;
 }
 
 .ten_lessons_block .block_title {
@@ -212,11 +232,10 @@ html {
 
 .achievements_block {
     background: url("../img/asphalt_back.png") no-repeat center;
-    background-position: center center;
 
     height: 274px;
     align-items: center;
-    margin-top: -20px;
+    /* margin-top: px; */
 }
 
 .achievements_block .block_content {
@@ -493,13 +512,13 @@ ul {
 
 .first_line {
     top: 11px;
-    right: 110px;
+    right: 107px;
     transform: matrix(0.97, -0.24, 0.23, 0.97, 0, 0);
 }
 
 .second_line {
     top: 11px;
-    right: 110px;
+    right: 107px;
     transform: matrix(0.97, 0.24, -0.23, 0.97, 0, 0);
 }
 
@@ -792,6 +811,7 @@ ul {
 
 .info #main_office_address {
     padding-right: 30px;
+    margin-bottom: 1rem;
 }
 
 .info .address {
@@ -923,6 +943,10 @@ footer {
     color: #FFFFFF;
 }
 
+footer .header_menu {
+    flex-wrap: wrap;
+}
+
 footer .block_content {
     padding: 0;
 }
@@ -933,4 +957,31 @@ footer .header_menu_logo .logo_title {
 
 footer .phone_and_social_links .social_links {
     justify-content: flex-start;
+}
+
+footer .other {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+footer .all_rights_reserved {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+
+    color: #FFFFFF;
+}
+
+footer .about_org {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+
+    color: #FFFFFF;
+
+    opacity: 0.9;
+
+    margin-left: 63px;
 }
