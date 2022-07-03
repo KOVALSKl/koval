@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype'),
-        url('../fonts/Montserrat/Montserrat-VariableFont_wght.eot') format('embedded-opentype'),
-        url('../fonts/Montserrat/montserrat-variablefont_wght-webfont.woff') format('woff'),
-        url('../fonts/Montserrat/Montserrat-VariableFont_wght.svg') format('svg');
-}
+@import url("./fonts.css");
 
 :root {
     --min-width: 320px;
@@ -47,7 +41,7 @@ html {
     align-items: center;
     justify-content: center;
 
-    font-family: Montserrat;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
 
     background: var(--blocks-background);
     mix-blend-mode: normal;
