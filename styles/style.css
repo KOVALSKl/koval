@@ -1,6 +1,9 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat-VariableFont_wght.eot') format('embedded-opentype'),
+        url('../fonts/Montserrat/montserrat-variablefont_wght-webfont.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-VariableFont_wght.svg') format('svg');
 }
 
 :root {
@@ -14,6 +17,7 @@
     --text-active-color: #107D3E;
     --tariffs-buttons-color: #AD0C0C;
     --widgets-color: #069F47;
+    --dark-widgets-active-color: #0DE03C;
     --blocks-background: #343434;
     --titles-color: #101D14;
 }
@@ -199,7 +203,7 @@ html {
     padding-top: 130px;
 }
 
-.link_button {
+.link_button, .link_button:active {
 
     display: inline-block;
 
@@ -218,18 +222,30 @@ html {
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-    background: #069F47;
+    background: var(--widgets-color);
     box-shadow: 0px 6px 4px rgba(9, 77, 32, 0.2);
-    border: none;
+    box-sizing: border-box;
+    border: 2.5px solid var(--widgets-color);
+
     border-radius: 50px;
 
     margin-bottom: 22px;
 
     text-decoration: none;
+
+    transition: 0.3s ease;
 }
 
-.link_button:hover, .link_button:active {
-    color: #fff;
+.link_button._light:hover {
+    color: var(--text-active-color);
+    border: 2.5px solid var(--text-active-color);
+    background: transparent;
+}
+
+.link_button._dark:hover {
+    color: var(--dark-widgets-active-color);
+    border: 2.5px solid var(--dark-widgets-active-color);
+    background: transparent;
 }
 
 .block_content .block_other_info {
@@ -404,10 +420,6 @@ li::before {
     margin-right: 43px;
 }
 
-/* .work_on_result_block .main_info .other_info .link_button {
-    padding: 16.69px 49px 16.69px 49px;
-} */
-
 .services_block .block_content {
     padding-top: 94px;
     padding-bottom: 160px;
@@ -476,12 +488,8 @@ li::before {
     text-align: center;
 }
 
-.service_footer .link_button_container {
-    width: 314px;
-}
-
 .service_footer .link_button {
-    padding: 16px 50px 19px 50px;
+    padding: 14px 50px 19px 50px;
 }
 
 .tariffs_block .block_content {
@@ -502,8 +510,14 @@ li::before {
     right: -62px;
 }
 
-.tariffs .link_button {
+.tariffs .link_button, .tariffs .link_button:active {
     background-color: var(--tariffs-buttons-color);
+    border-color: var(--tariffs-buttons-color);
+}
+
+.tariffs .link_button._light:hover {
+    border-color: var(--tariffs-buttons-color);
+    color: var(--tariffs-buttons-color);
 }
 
 .tariffs .service .service_footer .price {
@@ -815,14 +829,18 @@ li::before {
 
 .map_block_title .block_content {
     padding-top: 4px;
-    padding-bottom: 77px;
+    padding-bottom: 34px;
 }
 
 .map_block_content {
     width: 100%;
-    background: url("../img/map.png") no-repeat;
-    background-position: center center;
+    position: relative;
+}
 
+#google_map {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
 }
 
 .map_block_content .block_content {
@@ -842,6 +860,8 @@ li::before {
     font-size: 24px;
 
     color: #101D14;
+    position: relative;
+    z-index: 10;
 
 }
 
