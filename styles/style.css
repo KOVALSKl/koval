@@ -1,5 +1,3 @@
-@import url("./fonts.css");
-
 :root {
     --min-width: 320px;
     --max-width: 1920px;
@@ -41,7 +39,7 @@ html {
     align-items: center;
     justify-content: center;
 
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-family: "Montserrat";
 
     background: var(--blocks-background);
     mix-blend-mode: normal;
@@ -96,20 +94,39 @@ html {
     list-style-type: none;
 }
 
-.menu_list .menu_link {
+.header_menu ul.menu_list>li a {
+    position: relative;
+    cursor: pointer;
+    line-height: 2;
+    text-decoration: none;
+    transition: color 0.4s ease-out;
+
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
 
     color: #fff;
     text-decoration: none;
-
-    padding-bottom: 4.5px;
 }
 
-.menu_link.active {
+.header_menu ul.menu_list>li a:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #00a650;
+    content: "";
+    transition: width 0.6s ease-out;
+}
+
+.header_menu ul.menu_list>li a:hover:after,
+.header_menu ul.menu_list>li a:focus:after {
+    width: 100%;
+}
+
+.header_menu ul.menu_list>li a:hover {
     color: var(--text-color);
-    border-bottom: 1px solid var(--text-color);
 }
 
 .phone_and_social_links .phone {
@@ -153,6 +170,14 @@ html {
     display: flex;
     justify-content: space-between;
     gap: 16px;
+}
+
+.phone_and_social_links .social_links object {
+    transition: 0.2s ease-out;
+}
+
+.phone_and_social_links .social_links object:hover {
+    opacity: 0.6;
 }
 
 .main_content_container {
