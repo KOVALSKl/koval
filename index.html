@@ -51,9 +51,11 @@
                     <div class="block_content">
                         <h1 class="block_title">Научу водить <br />за 10 занятий</h1>
                         <h2 class="block_subtitle">Заполни заявку и получи<br />первое занятие бесплатно</h2>
-                        <button class="link_button">
-                            Записать на первое занятие
-                        </button>
+                        <div class="link_button_container">
+                            <a class="link_button" href="">
+                                Записать на первое занятие
+                            </a>
+                        </div>
                         <div class="block_other_info">Занятие полностью бесплатное<br />
                             и ни к чему не обязывает</div>
                     </div>
@@ -129,9 +131,11 @@
                                     <p>Записаться в школу можно в любой момент (даже прямо сейчас),
                                         <br>а начать заниматься уже завтра
                                     </p>
-                                    <button class="link_button">
-                                        Записаться в школу
-                                    </button>
+                                    <div class="link_button_container">
+                                        <a class="link_button" href="">
+                                            Записаться в школу
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -167,9 +171,11 @@
                                         </div>
                                     </div>
                                     <div class="service_footer">
-                                        <button class="link_button">
+                                        <!-- <div class="link_button_container"> -->
+                                        <a class="link_button" href="">
                                             Записаться на занятие
-                                        </button>
+                                        </a>
+                                        <!-- </div> -->
                                     </div>
                                 </div>
 
@@ -192,9 +198,9 @@
                                         </div>
                                     </div>
                                     <div class="service_footer">
-                                        <button class="link_button">
+                                        <a class="link_button" href="">
                                             Записаться на занятие
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
 
@@ -220,9 +226,9 @@
                                         </div>
                                     </div>
                                     <div class="service_footer">
-                                        <button class="link_button">
+                                        <a class="link_button" href="">
                                             Записаться на занятие
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <img src="./img/steering_wheel.jpg" id="services_wheel" />
@@ -260,9 +266,9 @@
                                         <div class="price">
                                             Стоимость: 48 000₽
                                         </div>
-                                        <button class="link_button">
+                                        <a class="link_button" href="">
                                             Записаться на занятие
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="service col-md-4 col-xs-12">
@@ -294,9 +300,9 @@
                                             </div>
                                             Стоимость: 50 000₽
                                         </div>
-                                        <button class="link_button">
+                                        <a class="link_button" href="">
                                             Записаться на занятие
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="service col-md-4 col-xs-12">
@@ -328,9 +334,9 @@
                                             </div>
                                             Цена со скидкой: 55 000₽
                                         </div>
-                                        <button class="link_button">
+                                        <a class="link_button" href="">
                                             Записаться на занятие
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <img src="./img/main_road_sign.png" id="main_road_sign" />
@@ -460,12 +466,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="autoschool_licenses_block block_container">
+                <div class="autoschool_licenses_block_title block_container">
                     <div class="block_content">
                         <div class="block_title">
                             <h1>В которой я обучаю</h1>
                             <h2 class="block_subtitle">Лицензии автошколы</h2>
                         </div>
+                    </div>
+                </div>
+                <div class="autoschool_licenses_block_body block_container">
+                    <div class="block_content">
                         <div class="main_content">
                             <div class="licenses row">
                                 <div class="license col-lg-4 col-md-6 col-xs-12">
@@ -483,7 +493,6 @@
                             </div>
                         </div>
                     </div>
-                    <img src="./img/licenses_background.jpg" id="licenses_background">
                 </div>
                 <div class="roadtotherules block_container">
                     <div class="block_content">
@@ -524,9 +533,9 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button class="link_button">
+                            <a class="link_button" href="">
                                 Записаться на обучение
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -566,7 +575,7 @@
                             <h2 class="block_subtitle">Оставьте заявку</h2>
                         </div>
                         <div class="main_content row">
-                            <form action="post" class="col-8">
+                            <form action="post" class="col-8" id="contact_form">
                                 <div class="form-control">
                                     <label for="name">Как к Вам обращаться?</label>
                                     <input type="text" name="name" placeholder="Имя">
@@ -612,7 +621,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="link_button">
+                                <button class="link_button" href="">
                                     Записаться на обучение
                                 </button>
                             </form>

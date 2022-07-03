@@ -82,14 +82,15 @@ html {
     margin-left: 16px;
 }
 
-.menu_list {
-    list-style-type: none;
-
+.header_menu ul.menu_list {
     display: flex;
     gap: 30px;
 
     margin: 0;
     padding: 0;
+
+    list-style-image: none;
+    list-style-type: none;
 }
 
 .menu_list .menu_link {
@@ -162,8 +163,7 @@ html {
 }
 
 .ten_lessons_block {
-    background: url("../img/car_background.png") center center no-repeat;
-    background-size: cover;
+    background: url("../img/car_background.png") center -110px no-repeat;
 }
 
 .ten_lessons_block .block_title {
@@ -194,8 +194,11 @@ html {
     padding-top: 130px;
 }
 
-.block_content .link_button {
-    padding: 16px 36px 19px 36px;
+.link_button {
+
+    display: inline-block;
+
+    padding: 14px 38px 22px 38px;
 
     height: 55px;
 
@@ -204,9 +207,11 @@ html {
     font-weight: 800;
     font-size: 15px;
 
+    text-align: center;
+
     color: #FFFFFF;
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     background: #069F47;
     box-shadow: 0px 6px 4px rgba(9, 77, 32, 0.2);
@@ -214,6 +219,12 @@ html {
     border-radius: 50px;
 
     margin-bottom: 22px;
+
+    text-decoration: none;
+}
+
+.link_button:hover, .link_button:active {
+    color: #fff;
 }
 
 .block_content .block_other_info {
@@ -226,8 +237,7 @@ html {
     color: #FFFFFF;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    padding-bottom: 235px;
+    padding-bottom: 212px;
 }
 
 .achievements_block {
@@ -374,9 +384,9 @@ ul {
     margin-right: 43px;
 }
 
-.work_on_result_block .main_info .other_info .link_button {
+/* .work_on_result_block .main_info .other_info .link_button {
     padding: 16.69px 49px 16.69px 49px;
-}
+} */
 
 .services_block .block_content {
     padding-top: 94px;
@@ -446,9 +456,12 @@ ul {
     text-align: center;
 }
 
-.service_footer .link_button {
-    padding: 16px 36px 19px 36px;
+.service_footer .link_button_container {
     width: 314px;
+}
+
+.service_footer .link_button {
+    padding: 16px 50px 19px 50px;
 }
 
 .tariffs_block .block_content {
@@ -525,14 +538,14 @@ ul {
 .studying_time_block {
     background: url("../img/studying_time_back.jpg") no-repeat;
     background-position: center center;
-    background-size: cover;
+    /* background-size: cover; */
 
-    margin-top: 65px;
+    margin-top: 25px;
 }
 
 .studying_time_block .block_content {
-    padding-top: 171px;
-    padding-bottom: 190px;
+    padding-top: 300px;
+    padding-bottom: 300px;
 
     display: flex;
     justify-content: center;
@@ -692,11 +705,14 @@ ul {
     filter: invert(100%);
 }
 
-.autoschool_licenses_block {
+.autoschool_licenses_block_title {
+    background: url("../img/licenses_background.jpg") top center no-repeat;
     position: relative;
     top: -1px;
+}
 
-    padding-bottom: 122px;
+.autoschool_licenses_block_title .block_content {
+    padding-top: 228px;
 }
 
 .autoschool_licenses_block .block_title {
@@ -705,10 +721,9 @@ ul {
     z-index: 10;
 }
 
-#licenses_background {
-    width: 100%;
-    position: absolute;
-    z-index: 0;
+.autoschool_licenses_block_body .block_content {
+    padding-top: 30px;
+    padding-bottom: 80px;
 }
 
 .licenses {
@@ -726,9 +741,8 @@ ul {
 
 .roadtotherules {
     background: url("../img/studying_time_back.jpg") no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding-top: 30px;
+    background-position: bottom center;
+    padding-top: 120px;
     padding-bottom: 209px;
 }
 
@@ -773,8 +787,8 @@ ul {
 }
 
 .roadtotherules .link_button {
-    width: 334px;
-    margin-left: -10px;
+    /* width: 334px;
+    margin-left: -10px; */
 }
 
 .map_block_title .block_content {
