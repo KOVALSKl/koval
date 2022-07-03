@@ -41,7 +41,7 @@ html {
     align-items: center;
     justify-content: center;
 
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
 
     background: var(--blocks-background);
     mix-blend-mode: normal;
