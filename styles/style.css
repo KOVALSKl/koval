@@ -191,7 +191,7 @@ html {
 }
 
 .ten_lessons_block {
-    background: url("../img/car_background.png") center -110px no-repeat;
+    background: url("../img/backgrounds/car_background.png") center -110px no-repeat;
 }
 
 .ten_lessons_block .block_title {
@@ -281,7 +281,7 @@ html {
 }
 
 .achievements_block {
-    background: url("../img/asphalt_back.png") no-repeat center;
+    background: url("../img/backgrounds/asphalt_back.png") no-repeat center;
 
     height: 274px;
     align-items: center;
@@ -589,9 +589,8 @@ li::before {
 }
 
 .studying_time_block {
-    background: url("../img/studying_time_back.jpg") no-repeat;
+    background: url("../img/backgrounds/studying_time_back.jpg") no-repeat;
     background-position: center center;
-    /* background-size: cover; */
 
     margin-top: 25px;
 }
@@ -630,68 +629,32 @@ li::before {
     padding-top: 42px;
 }
 
-.slider_list {
-    display: flex;
-    gap: 15px;
-
+.about_my_work_block .main_content {
     position: relative;
-    z-index: 10;
 }
 
-.slider_list>img {
+.about_my_work_block .main_content>img {
     position: absolute;
-    z-index: 0;
     transform: rotate(-78.72deg);
-    overflow: hidden !important;
 }
 
 #first__footprint {
-    bottom: 32px;
+    bottom: 80px;
     left: -192px;
 }
 
 #second__footprint {
-    bottom: -82px;
+    bottom: -32px;
     left: 417px;
 }
 
 #therd__footprint {
-    top: -66px;
+    top: 0px;
     right: -100px;
 }
 
-.slider_item {
-    width: 370px;
-    height: 442px;
-    background: url("../img/slider_item.png") no-repeat;
-    background-position: center center;
-
-    position: relative;
-    z-index: 10;
-
-    border-radius: 15px;
-}
-
-.slider_item .slider_item_image {
-    position: relative;
-    z-index: 10;
-}
-
-.play_icon {
-    position: absolute;
-    top: 50%;
-    left: 46%;
-}
-
-.slider_controllers {
-    padding: 22px;
-
-    display: flex;
-    justify-content: space-between;
-}
-
 .benefits_block {
-    background: url("../img/benefits_background.png") no-repeat;
+    background: url("../img/backgrounds/benefits_background.png") no-repeat;
     background-position: top center;
 }
 
@@ -748,18 +711,8 @@ li::before {
     color: #FFFFFF;
 }
 
-.learning_process_block .slider_item {
-    background: url("../img/second_slider.png");
-    height: 642px;
-}
-
-.learning_process_block .slider_controllers {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-}
-
 .autoschool_licenses_block_title {
-    background: url("../img/licenses_background.jpg") top center no-repeat;
+    background: url("../img/backgrounds/licenses_background.jpg") top center no-repeat;
     position: relative;
     top: -1px;
 }
@@ -793,7 +746,7 @@ li::before {
 }
 
 .roadtotherules {
-    background: url("../img/studying_time_back.jpg") no-repeat;
+    background: url("../img/backgrounds/studying_time_back.jpg") no-repeat;
     background-position: bottom center;
     padding-top: 120px;
     padding-bottom: 209px;
