@@ -10,7 +10,18 @@ $(document).ready(function () {
 
     button.on('click', function (e) {
         e.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, 1200);
+
+        let scrollTop = $(window).scrollTop();
+        let seconds = 0;
+
+        if (scrollTop <= 3000) {
+            seconds = 1700;
+        } else if (scrollTop > 3000 && scrollTop < 5000) {
+            seconds = 3000;
+        } else {
+            seconds = 5000;
+        }
+        $('html, body').animate({ scrollTop: 0 }, seconds);
     });
 
 });
