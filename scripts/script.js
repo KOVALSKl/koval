@@ -1,22 +1,27 @@
 $(document).ready(function () {
-    const menuLinks = document.querySelectorAll('.menu_link[data-goto]');
-    console.log(`menuLinks: ${menuLinks}`);
-    if (menuLinks.length > 0) {
-        menuLinks.forEach(menuLink => {
-            console.log(`menu: ${menuLink}`);
-            menuLink.addEventListiner('click', (e) => {
-                const menuItem = e.target;
-                if (menuItem.dataset.goto && $(menuItem.dataset.goto)) {
-                    const gotoBlock = $(menuItem.dataset.goto);
-                    const gotoBlockWay = gotoBlock.getBoundingClientRect().top + scrollY - $(header).offsetHeight;
+    $('.menu_list > li a').on('click', function (e) {
+        let href = $(this).attr('href');
+        let offset = $(href).offset().top;
+        $('html, body').animate({
+            scrollTop: offset
+        }, {
+            duration: offset / 2,
+            easing: "linear"
+        });
 
-                    window.scrollTo({
-                        top: gotoBlockWay,
-                        behavior: "smooth"
-                    });
-                    e.preventDefault();
-                }
-            })
-        })
-    }
+        e.preventDefault();
+    });
+
+    // $('footer .menu_list > li a').on('click', function (e) {
+    //     let href = $(this).attr('href');
+    //     let offset = $(href).offset().top;
+    //     $('html, body').animate({
+    //         scroll: offset
+    //     }, {
+    //         duration: offset / 2,
+    //         easing: "linear"
+    //     });
+
+    //     e.preventDefault();
+    // });
 });
