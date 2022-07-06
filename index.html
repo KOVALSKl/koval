@@ -26,11 +26,11 @@
                 </div>
                 <nav class="menu_body">
                     <ul class="menu_list">
-                        <li><a href="" class="menu_link">Обо Мне</a></li>
-                        <li><a href="" class="menu_link">Услуги</a></li>
-                        <li><a href="" class="menu_link">Отзывы</a></li>
-                        <li><a href="" class="menu_link">Процесс обучения</a></li>
-                        <li><a href="" class="menu_link">Карта</a></li>
+                        <li><a data-goto=".work_on_result_block" href="#" class="menu_link">Обо Мне</a></li>
+                        <li><a data-goto=".services_block" href="#" class="menu_link">Услуги</a></li>
+                        <li><a data-goto=".about_my_work_block" href="#" class="menu_link">Отзывы</a></li>
+                        <li><a data-goto=".learning_process_block" href="#" class="menu_link">Процесс обучения</a></li>
+                        <li><a data-goto=".map_block_content" href="#" class="menu_link">Карта</a></li>
                     </ul>
                 </nav>
                 <div class="phone_and_social_links">
@@ -403,7 +403,7 @@
                             <h2 class="block_subtitle">Немного отзывов</h2>
                         </div>
                         <div class="main_content">
-                            <div class="owl-carousel owl-theme owl-light owl-pics">
+                            <div class="owl-carousel owl-theme owl-light owl-pics" id="slider1">
                                 <div class="item">
                                     <img src="./img/comments/01.jpg" />
                                 </div>
@@ -507,20 +507,25 @@
                             <h2 class="block_subtitle">Процесс обучения</h2>
                         </div>
                         <div class="main_content">
-                            <div class="owl-carousel owl-theme owl-dark owl-vids">
+                            <div class="owl-carousel owl-theme owl-dark owl-vids" id="slider2">
                                 <div class="item">
-                                    <video controls loop>
+                                    <video controls loop poster="./videos/01_preview.png">
                                         <source src="./videos/01.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="item">
-                                    <video controls loop>
+                                    <video controls loop poster="./videos/02_preview.png">
                                         <source src="./videos/02.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="item">
-                                    <video controls loop>
+                                    <video controls loop poster="./videos/03_preview.png">
                                         <source src="./videos/03.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="item">
+                                    <video controls loop poster="./videos/04_preview.png">
+                                        <source src="./videos/04.mp4" type="video/mp4">
                                     </video>
                                 </div>
                             </div>
@@ -754,10 +759,24 @@
                 </div>
             </div>
         </footer>
+        <div class="fixed-buttons">
+            <a href="" id="get-upper-button">
+                &#8963;
+            </a>
+            <div id="fixed-whatsapp-image">
+                <img src="./img/social-networks/whatsapp_white.png" />
+            </div>
+        </div>
     </div>
     <script src="./scripts/jquery-3.6.0.min.js"></script>
     <script src="./scripts/owlCarousel/owl.carousel.min.js"></script>
     <script src="./scripts/slider.js"></script>
+    <script src="./scripts/get-up-button-script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
+
+<!-- <div class="img_center1"
+    onclick="$(this).replaceWith('<iframe width=\'100%\' height=\'400\' src=\'https://www.youtube.com/embed/NHgSn6U9m5g?autoplay=1&amp;rel=0\' frameborder=\'0\' allowfullscreen></iframe><br/>');">
+    <img alt="" src="https://ktonanovenkogo.ru/wp-content/uploads/video/image/chto-takoe-bitkoin.jpg" /></div> -->
 
 </html>
