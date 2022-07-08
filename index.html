@@ -28,7 +28,11 @@
                     </div>
                 </div>
                 <nav class="menu_body">
-                    <ul class="menu_list">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu_list" id="menu">
                         <li><a href="#work_on_result_block" class="menu_link">Обо Мне</a></li>
                         <li><a href="#services_block" class="menu_link">Услуги</a></li>
                         <li><a href="#about_my_work_block" class="menu_link">Отзывы</a></li>
@@ -37,38 +41,31 @@
                     </ul>
                 </nav>
                 <div class="phone_and_social_links">
-                    <div class="phone">+7 (928) 412-82-90</div>
-                    <div class="phone">+7 (995) 220-82-90</div>
-                    <div class="social_links">
-                        <object data="./img/social-networks/whatsapp.svg" type="image/svg+xml" width="32" height="32"
-                            class="aligncenter">
-                            <img src="./img/social-networks/whatsapp.svg" />
-                            <svg version="1.1" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32"
-                                preserveAspectRatio="xMinYMin meet"></svg>
-                        </object>
-                        <object data="./img/social-networks/vk.svg" type="image/svg+xml" width="32" height="32"
-                            class="aligncenter">
-                            <img src="./img/social-networks/vk.svg" />
-                            <svg version="1.1" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32"
-                                preserveAspectRatio="xMinYMin meet"></svg>
-                        </object>
-                        <object data="./img/social-networks/telegram.svg" type="image/svg+xml" width="32" height="32"
-                            class="aligncenter">
-                            <img src="./img/social-networks/telegram.svg" />
-                            <svg version="1.1" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32"
-                                preserveAspectRatio="xMinYMin meet"></svg>
-                        </object>
-                        <div class="dangerous_organization">
-                            <object data="./img/social-networks/instagram.svg" type="image/svg+xml" width="32"
-                                height="32" class="aligncenter">
-                                <img src="./img/social-networks/instagram.svg" />
-                                <svg version="1.1" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32"
-                                    preserveAspectRatio="xMinYMin meet"></svg>
-                            </object>
-                            <span>*</span>
-                        </div>
+                    <div class="phones">
+                        <div class="phone">+7 (928) 412-82-90</div>
+                        <div class="phone">+7 (995) 220-82-90</div>
                     </div>
-                    <div class="insta_tag">@koval_instruktor123</div>
+                    <div class="social_links">
+                        <div class="social_images">
+                            <a
+                                href="https://api.whatsapp.com/send/?phone=89952208290&text&type=phone_number&app_absent=0">
+                                <img src="./img/social-networks/whatsapp.png" />
+                            </a>
+                            <a href="http://vk.com/koval_instruktor123">
+                                <img src="./img/social-networks/vk.png" />
+                            </a>
+                            <a href="https://t.me/koval_instruktor_krd">
+                                <img src="./img/social-networks/telegram.png" />
+                            </a>
+                            <div class="dangerous_organization">
+                                <a href="https://www.instagram.com/accounts/login/?next=/koval_instruktor123/">
+                                    <img src="./img/social-networks/instagram.png" />
+                                </a>
+                                <span>*</span>
+                            </div>
+                        </div>
+                        <div class="insta_tag">@koval_instruktor123</div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -91,52 +88,56 @@
                     <div class="block_content">
                         <div class="achievments_block_up">
                             <div class="achievments row">
-                                <div class="achievment col-md-3 col-xs-12">
-                                    <object data="./img/achievments/achievment1.svg" type="image/svg+xml" width="82"
-                                        height="82" class="aligncenter">
-                                        <img src="./img/achievments/achievment1.svg"
-                                            alt="Лучшая практика вождения в Краснодаре" />
-                                        <svg version="1.1" x="0px" y="0px" width="82" height="82" viewBox="0 0 82 82"
-                                            preserveAspectRatio="xMinYMin meet"></svg>
-                                    </object>
-                                    <div class="achievment_content">
-                                        Лучшая практика вождения <br />в Краснодаре
+                                <div class="achievments _couple col-lg-6 col-sm-12">
+                                    <div class="achievment">
+                                        <object data="./img/achievments/achievment1.svg" type="image/svg+xml" width="82"
+                                            height="82" class="aligncenter">
+                                            <img src="./img/achievments/achievment1.svg"
+                                                alt="Лучшая практика вождения в Краснодаре" />
+                                            <svg version="1.1" x="0px" y="0px" width="82" height="82"
+                                                viewBox="0 0 82 82" preserveAspectRatio="xMinYMin meet"></svg>
+                                        </object>
+                                        <div class="achievment_content">
+                                            Лучшая практика вождения <br />в Краснодаре
+                                        </div>
+                                    </div>
+                                    <div class="achievment">
+                                        <object data="./img/achievments/achievment2.svg" type="image/svg+xml" width="82"
+                                            height="82" class="aligncenter">
+                                            <img src="./img/achievments/achievment2.svg"
+                                                alt="Изучайте теорию онлайн лично с преподавателем" />
+                                            <svg version="1.1" x="0px" y="0px" width="82" height="82"
+                                                viewBox="0 0 82 82" preserveAspectRatio="xMinYMin meet"></svg>
+                                        </object>
+                                        <div class="achievment_content">
+                                            Изучайте теорию онлайн лично с преподавателем
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="achievment col-md-3 col-xs-12">
-                                    <object data="./img/achievments/achievment2.svg" type="image/svg+xml" width="82"
-                                        height="82" class="aligncenter">
-                                        <img src="./img/achievments/achievment2.svg"
-                                            alt="Изучайте теорию онлайн лично с преподавателем" />
-                                        <svg version="1.1" x="0px" y="0px" width="82" height="82" viewBox="0 0 82 82"
-                                            preserveAspectRatio="xMinYMin meet"></svg>
-                                    </object>
-                                    <div class="achievment_content">
-                                        Изучайте теорию онлайн лично с преподавателем
+                                <div class="achievments _couple col-lg-6 col-sm-12">
+                                    <div class="achievment ">
+                                        <object data="./img/achievments/achievment3.svg" type="image/svg+xml" width="82"
+                                            height="82" class="aligncenter">
+                                            <img src="./img/achievments/achievment3.svg"
+                                                alt="Выстраиваем график занятий лично под Вас" />
+                                            <svg version="1.1" x="0px" y="0px" width="82" height="82"
+                                                viewBox="0 0 82 82" preserveAspectRatio="xMinYMin meet"></svg>
+                                        </object>
+                                        <div class="achievment_content">
+                                            Выстраиваем график занятий лично под Вас
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="achievment col-md-3 col-xs-12">
-                                    <object data="./img/achievments/achievment3.svg" type="image/svg+xml" width="82"
-                                        height="82" class="aligncenter">
-                                        <img src="./img/achievments/achievment3.svg"
-                                            alt="Выстраиваем график занятий лично под Вас" />
-                                        <svg version="1.1" x="0px" y="0px" width="82" height="82" viewBox="0 0 82 82"
-                                            preserveAspectRatio="xMinYMin meet"></svg>
-                                    </object>
-                                    <div class="achievment_content">
-                                        Выстраиваем график занятий лично под Вас
-                                    </div>
-                                </div>
-                                <div class="achievment col-md-3 col-xs-12">
-                                    <object data="./img/achievments/achievment4.svg" type="image/svg+xml" width="82"
-                                        height="82" class="aligncenter">
-                                        <img src="./img/achievments/achievment4.svg"
-                                            alt="Предоставляем рассрочку на время обучения" />
-                                        <svg version="1.1" x="0px" y="0px" width="82" height="82" viewBox="0 0 82 82"
-                                            preserveAspectRatio="xMinYMin meet"></svg>
-                                    </object>
-                                    <div class="achievment_content">
-                                        Предоставляем рассрочку на время обучения
+                                    <div class="achievment ">
+                                        <object data="./img/achievments/achievment4.svg" type="image/svg+xml" width="82"
+                                            height="82" class="aligncenter">
+                                            <img src="./img/achievments/achievment4.svg"
+                                                alt="Предоставляем рассрочку на время обучения" />
+                                            <svg version="1.1" x="0px" y="0px" width="82" height="82"
+                                                viewBox="0 0 82 82" preserveAspectRatio="xMinYMin meet"></svg>
+                                        </object>
+                                        <div class="achievment_content">
+                                            Предоставляем рассрочку на время обучения
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -148,8 +149,8 @@
                         <div class="block_title" id="work_on_result_block">
                             <h1>Ценю ваше время</h1>
                             <h2 class="block_subtitle">Работаю на результат</h2>
-                            <img src="./img/koval_photo2.png" id="koval_photo" />
                         </div>
+                        <img src="./img/koval_photo2.png" id="koval_photo" />
                         <div class="main_content">
                             <div class="main_info">
                                 <div class="biography">
@@ -199,9 +200,9 @@
                         </div>
                         <div class="main_content">
                             <div class="services row">
-                                <div class="service col-md-4 col-xs-12">
+                                <div class="service col-md-4 col-sm-12">
                                     <div class="service_header">
-                                        Обучение в автошколе
+                                        <span>Обучение </span> <span>в автошколе</span>
                                     </div>
                                     <div class="service_body">
                                         <div class="sub_info">
@@ -211,7 +212,7 @@
                                             </ul>
                                         </div>
                                         <div class="main_info">
-                                            Обучение в автошколе "Радуга" происходит под моим личным контролем.
+                                            Обучение в автошколе происходит под моим личным контролем.
                                             <br>Изучение теории в классе или индивидуально с преподавателем онлайн.
                                             <br>График обучения выстраивается лично под Вас, поэтому вы можете
                                             заниматься в
@@ -226,9 +227,9 @@
                                     </div>
                                 </div>
 
-                                <div class="service col-md-4 col-xs-12">
+                                <div class="service col-md-4 col-sm-12">
                                     <div class="service_header">
-                                        Подготовка к экзаменам
+                                        <span>Подготовка </span> <span>к экзаменам</span>
                                     </div>
                                     <div class="service_body">
                                         <div class="main_info">
@@ -245,15 +246,15 @@
                                         </div>
                                     </div>
                                     <div class="service_footer">
-                                        <a class="link_button _light" href="">
-                                            Записаться на занятие
+                                        <a class="link_button _light big" href="">
+                                            <span>Записаться</span> <span>на занятие</span>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="service col-md-4 col-xs-12">
+                                <div class="service col-md-4 col-sm-12">
                                     <div class="service_header">
-                                        Восстановление навыков
+                                        <span>Восстановление </span> <span>навыков</span>
                                     </div>
                                     <div class="service_body">
                                         <div class="sub_info">
@@ -274,8 +275,8 @@
                                         </div>
                                     </div>
                                     <div class="service_footer">
-                                        <a class="link_button _light" href="">
-                                            Записаться на занятие
+                                        <a class="link_button _light big" href="">
+                                            <span>Записаться</span> <span>на занятие</span>
                                         </a>
                                     </div>
                                 </div>
@@ -294,7 +295,7 @@
                             <div class="tariffs row">
                                 <div class="service col-md-4 col-xs-12">
                                     <div class="service_header">
-                                        Тариф «Стандарт»
+                                        <span>Тариф </span> <span>«Стандарт»</span>
                                     </div>
                                     <div class="service_body">
                                         <div class="sub_info">
@@ -314,14 +315,14 @@
                                         <div class="price">
                                             Стоимость: 48 000₽
                                         </div>
-                                        <a class="link_button _light" href="">
-                                            Записаться на занятие
+                                        <a class="link_button _light big" href="">
+                                            <span>Записаться</span> <span>на <span>пробное</span> занятие</span>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="service col-md-4 col-xs-12">
                                     <div class="service_header">
-                                        Тариф «Оптимал»
+                                        <span>Тариф </span> <span>«Оптимал»</span>
                                     </div>
                                     <div class="service_body">
                                         <div class="sub_info">
@@ -348,14 +349,14 @@
                                             </div>
                                             Стоимость: 50 000₽
                                         </div>
-                                        <a class="link_button _light" href="">
-                                            Записаться на занятие
+                                        <a class="link_button _light big" href="">
+                                            <span>Записаться</span> <span>на <span>пробное</span> занятие</span>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="service col-md-4 col-xs-12">
                                     <div class="service_header">
-                                        Тариф «Эксклюзив»
+                                        <span>Тариф </span> <span>«Эксклюзив»</span>
                                     </div>
                                     <div class="service_body">
                                         <div class="sub_info">
@@ -380,10 +381,10 @@
                                                 <div class="first_line"></div>
                                                 <div class="second_line"></div>
                                             </div>
-                                            Цена со скидкой: 55 000₽
+                                            Стоимость: 55 000₽
                                         </div>
-                                        <a class="link_button _light" href="">
-                                            Записаться на занятие
+                                        <a class="link_button _light big" href="">
+                                            <span>Записаться</span> <span>на <span>пробное</span> занятие</span>
                                         </a>
                                     </div>
                                 </div>
@@ -473,52 +474,56 @@
                     <div class="block_content">
                         <div class="main_content">
                             <div class="benefits row">
-                                <div class="benefit col-lg-3 col-sm-6">
-                                    <div class="benefit_title">
-                                        Надежно
+                                <div class="_benefits _couple col-lg-6 col-sm-12">
+                                    <div class="benefit">
+                                        <div class="benefit_title">
+                                            Надежно
+                                        </div>
+                                        <div class="benefit_body">
+                                            <ul>
+                                                <li>Я работаю инструктором <br>
+                                                    с 2009 года</li>
+                                                <li>8 из 10 моих учеников сдают экзамен с 1-го раза</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="benefit_body">
-                                        <ul>
-                                            <li>Я работаю инструктором <br>
-                                                с 2009 года</li>
-                                            <li>8 из 10 моих учеников сдают экзамен с 1-го раза</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="benefit col-lg-3 col-sm-6">
-                                    <div class="benefit_title">
-                                        Выгодно
-                                    </div>
-                                    <div class="benefit_body">
-                                        <ul>
-                                            <li>Рассрочка на все время Вашего обучения</li>
-                                            <li>Выстроим перссональный график платежей</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="benefit col-lg-3 col-sm-6">
-                                    <div class="benefit_title">
-                                        Комфортно
-                                    </div>
-                                    <div class="benefit_body">
-                                        <ul>
-                                            <li>Сопровождение<br>
-                                                до полного<br>
-                                                получения прав</li>
-                                            <li>В моей команде топ-инструктора всего города</li>
-                                        </ul>
+                                    <div class="benefit">
+                                        <div class="benefit_title">
+                                            Выгодно
+                                        </div>
+                                        <div class="benefit_body">
+                                            <ul>
+                                                <li>Рассрочка на все время Вашего обучения</li>
+                                                <li>Выстроим перссональный график платежей</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="benefit col-lg-3 col-sm-6">
-                                    <div class="benefit_title">
-                                        Удобно
+                                <div class="_benefits _couple col-lg-6 col-sm-12">
+                                    <div class="benefit">
+                                        <div class="benefit_title">
+                                            Комфортно
+                                        </div>
+                                        <div class="benefit_body">
+                                            <ul>
+                                                <li>Сопровождение<br>
+                                                    до полного<br>
+                                                    получения прав</li>
+                                                <li>В моей команде топ-инструктора всего города</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="benefit_body">
-                                        <ul>
-                                            <li>Изучайте теорию дома
-                                                с личным преподавателем</li>
-                                            <li>Индивидуальный график изучения теории и вождения</li>
-                                        </ul>
+                                    <div class="benefit">
+                                        <div class="benefit_title">
+                                            Удобно
+                                        </div>
+                                        <div class="benefit_body">
+                                            <ul>
+                                                <li>Изучайте теорию дома
+                                                    с личным преподавателем</li>
+                                                <li>Индивидуальный график изучения теории и вождения</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -569,25 +574,29 @@
                     <div class="block_content">
                         <div class="main_content">
                             <div class="licenses row">
-                                <div class="license col-lg-4 col-md-6 col-xs-12">
-                                    <a href="./img/licenses/license1.jpg" data-lightbox="licenses">
-                                        <img src="./img/licenses/license1.jpg" alt="">
-                                    </a>
+                                <div class="_licenses _couple col-lg-6 col-sm-12">
+                                    <div class="license">
+                                        <a href="./img/licenses/license1.jpg" data-lightbox="licenses">
+                                            <img src="./img/licenses/license1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="license">
+                                        <a href="./img/licenses/license2.jpg" data-lightbox="licenses">
+                                            <img src="./img/licenses/license2.jpg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="license col-lg-4 col-md-6 col-xs-12">
-                                    <a href="./img/licenses/license2.jpg" data-lightbox="licenses">
-                                        <img src="./img/licenses/license2.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="license col-lg-4 col-md-6 col-xs-12">
-                                    <a href="./img/licenses/license3.jpg" data-lightbox="licenses">
-                                        <img src="./img/licenses/license3.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="license col-lg-4 col-md-6 col-xs-12">
-                                    <a href="./img/licenses/license4.jpg" data-lightbox="licenses">
-                                        <img src="./img/licenses/license4.jpg" alt="">
-                                    </a>
+                                <div class="_licenses _couple col-lg-6 col-sm-12">
+                                    <div class="license">
+                                        <a href="./img/licenses/license3.jpg" data-lightbox="licenses">
+                                            <img src="./img/licenses/license3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="license">
+                                        <a href="./img/licenses/license4.jpg" data-lightbox="licenses">
+                                            <img src="./img/licenses/license4.jpg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -602,28 +611,28 @@
                         <div class="main_content">
                             <div class="steps_to_rules">
                                 <ul id="steps" class="row">
-                                    <li class="step col-6">
+                                    <li class="step col-lg-6 col-sm-12">
                                         <span class="step_number">1</span>
                                         <div class="step_body">
                                             Записываетесь<br>
                                             на безоплатное занятие
                                         </div>
                                     </li>
-                                    <li class="step col-6">
+                                    <li class="step col-lg-6 col-sm-12">
                                         <span class="step_number">3</span>
                                         <div class="step_body">
                                             Проходите обучение<br>
                                             в автошколе
                                         </div>
                                     </li>
-                                    <li class="step col-6">
+                                    <li class="step col-lg-6 col-sm-12">
                                         <span class="step_number">2</span>
                                         <div class="step_body">
                                             Проходите<br>
                                             мед комиссию
                                         </div>
                                     </li>
-                                    <li class="step col-6">
+                                    <li class="step col-lg-6 col-sm-12">
                                         <span class="step_number">4</span>
                                         <div class="step_body">
                                             Сдаёте экзамен<br>
@@ -678,7 +687,7 @@
                             <h2 class="block_subtitle">Оставьте заявку</h2>
                         </div>
                         <div class="main_content row">
-                            <form action="post" class="col-8" id="contact_form">
+                            <form action="post" class="col-lg-8 col-md-7" id="contact_form">
                                 <div class="form-control">
                                     <label for="name">Как к Вам обращаться?</label>
                                     <input type="text" name="name" placeholder="Имя">
@@ -728,7 +737,7 @@
                                     Записаться на обучение
                                 </button>
                             </form>
-                            <img src="./img/photoKoval.png" alt="" class="col-4" style="height: 460px;">
+                            <img src="./img/photoKoval.png" alt="" class="col-lg-4 col-md-5" style="height: 460px;">
                         </div>
                     </div>
                 </div>
@@ -736,70 +745,71 @@
         </main>
         <footer>
             <div class="block_container">
-                <div class="header_menu">
-                    <div class="header_menu_logo">
-                        <img src="./img/logo.png" id="logo" />
-                        <div class="logo_title">
-                            Коваль<br />
-                            Автоинструктор
-                        </div>
-                    </div>
-                    <nav class="menu_body">
-                        <ul class="menu_list">
-                            <li><a href="#work_on_result_block" class="menu_link">Обо Мне</a></li>
-                            <li><a href="#services_block" class="menu_link">Услуги</a></li>
-                            <li><a href="#about_my_work_block" class="menu_link">Отзывы</a></li>
-                            <li><a href="#learning_process_block" class="menu_link">Процесс обучения</a></li>
-                            <li><a href="#map_block_content" class="menu_link">Карта</a></li>
-                        </ul>
-                    </nav>
-                    <div class="phone_and_social_links">
-                        <div class="phone">+7 (928) 412-82-90</div>
-                        <div class="social_links">
-                            <object data="./img/social-networks/whatsapp.svg" type="image/svg+xml" width="32"
-                                height="32" class="aligncenter">
-                                <img src="./img/social-networks/whatsapp.svg" />
-                                <svg version="1.1" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32"
-                                    preserveAspectRatio="xMinYMin meet"></svg>
-                            </object>
-                            <object data="./img/social-networks/vk.svg" type="image/svg+xml" width="32" height="32"
-                                class="aligncenter">
-                                <img src="./img/social-networks/vk.svg" />
-                                <svg version="1.1" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32"
-                                    preserveAspectRatio="xMinYMin meet"></svg>
-                            </object>
-                            <object data="./img/social-networks/telegram.svg" type="image/svg+xml" width="32"
-                                height="32" class="aligncenter">
-                                <img src="./img/social-networks/telegram.svg" />
-                                <svg version="1.1" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32"
-                                    preserveAspectRatio="xMinYMin meet"></svg>
-                            </object>
-                            <div class="dangerous_organization">
-                                <object data="./img/social-networks/instagram.svg" type="image/svg+xml" width="32"
-                                    height="32" class="aligncenter">
-                                    <img src="./img/social-networks/instagram.svg" />
-                                    <svg version="1.1" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32"
-                                        preserveAspectRatio="xMinYMin meet"></svg>
-                                </object>
-                                <span>*</span>
+                <div class="block_content">
+                    <div class="main_content">
+                        <div class="header_menu">
+                            <div class="header_menu_logo">
+                                <img src="./img/logo.png" id="logo" />
+                                <div class="logo_title">
+                                    Коваль<br />
+                                    Автоинструктор
+                                </div>
+                            </div>
+                            <nav class="menu_body">
+                                <ul class="menu_list" id="footer_menu">
+                                    <li><a href="#work_on_result_block" class="menu_link">Обо Мне</a></li>
+                                    <li><a href="#services_block" class="menu_link">Услуги</a></li>
+                                    <li><a href="#about_my_work_block" class="menu_link">Отзывы</a></li>
+                                    <li><a href="#learning_process_block" class="menu_link">Процесс обучения</a></li>
+                                    <li><a href="#map_block_content" class="menu_link">Карта</a></li>
+                                </ul>
+                            </nav>
+                            <div class="phone_and_social_links">
+                                <div class="phones">
+                                    <div class="phone">+7 (928) 412-82-90</div>
+                                    <div class="phone">+7 (995) 220-82-90</div>
+                                </div>
+                                <div class="social_links">
+                                    <div class="social_images">
+                                        <a
+                                            href="https://api.whatsapp.com/send/?phone=89952208290&text&type=phone_number&app_absent=0">
+                                            <img src="./img/social-networks/whatsapp.png" />
+                                        </a>
+                                        <a href="http://vk.com/koval_instruktor123">
+                                            <img src="./img/social-networks/vk.png" />
+                                        </a>
+                                        <a href="https://t.me/koval_instruktor_krd">
+                                            <img src="./img/social-networks/telegram.png" />
+                                        </a>
+                                        <div class="dangerous_organization">
+                                            <a
+                                                href="https://www.instagram.com/accounts/login/?next=/koval_instruktor123/">
+                                                <img src="./img/social-networks/instagram.png" />
+                                            </a>
+                                            <span>*</span>
+                                        </div>
+                                    </div>
+                                    <div class="insta_tag">@koval_instruktor123</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="other">
-                        <div class="all_rights_reserved">© 2022 Все права защищены</div>
-                        <div class="about_org">* - запрещенная на териитории России организация</div>
+                        <div class="other">
+                            <div class="all_rights_reserved">© 2022 Все права защищены</div>
+                            <div class="about_org">* - запрещенная на териитории России организация</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <div class="fixed-buttons">
-            <a href="" id="get-upper-button">
-                &#8963;
-            </a>
-            <div id="fixed-whatsapp-image">
-                <img src="./img/social-networks/whatsapp_white.png" />
-            </div>
+    </div>
+    </footer>
+    <div class="fixed-buttons">
+        <a href="" id="get-upper-button">
+            &#8963;
+        </a>
+        <div id="fixed-whatsapp-image">
+            <img src="./img/social-networks/whatsapp_white.png" />
         </div>
+    </div>
     </div>
     <script src="./scripts/jquery-3.6.0.min.js"></script>
     <script src="./scripts/owlCarousel/owl.carousel.min.js"></script>
