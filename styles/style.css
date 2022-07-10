@@ -425,6 +425,10 @@ body {
     padding-top: 11px;
 }
 
+.work_on_result_block .other_info {
+    width: 616px;
+}
+
 .work_on_result_block .block_content {
     padding-top: 0;
 }
@@ -618,6 +622,7 @@ li::before {
 
 .tariffs {
     display: flex;
+    justify-content: center;
     gap: 15px;
     position: relative;
 }
@@ -690,6 +695,10 @@ li::before {
     top: 11px;
     right: 137px;
     transform: matrix(0.97, 0.24, -0.23, 0.97, 0, 0);
+}
+
+.primary_lessons {
+    color: var(--text-active-color);
 }
 
 .studying_time_block {
@@ -844,6 +853,10 @@ li::before {
     padding-bottom: 80px;
 }
 
+.licenses.row {
+    justify-content: center;
+}
+
 .license {
     width: 274px !important;
     filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.15));
@@ -992,7 +1005,14 @@ li::before {
     margin: 0;
 }
 
+.form_block .main_content {
+    display: flex;
+    justify-content: space-between;
+}
+
 .form_block .main_content>img {
+    width: 371px;
+    height: 460px;
     margin-top: -14px;
 }
 
@@ -1149,29 +1169,8 @@ footer .about_org {
     margin-left: 63px;
 }
 
-@media screen and (max-width: 575.98px) {
-    :root {
-        --max-width-container: 576px;
-    }
 
-    .work_on_result_block #koval_photo {
-        width: 238px;
-        height: 300px;
-    }
-}
-
-@media screen and (max-width: 767.98px) {
-    :root {
-        --max-width-container: 768px;
-    }
-
-    .work_on_result_block #koval_photo {
-        width: 270px;
-        height: 340px;
-    }
-}
-
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1080px) {
     :root {
         --max-width-container: 992px;
     }
@@ -1190,16 +1189,16 @@ footer .about_org {
     }
 
     .work_on_result_block #koval_photo {
-        width: 290px;
-        height: 359px;
-    }
-
-    .services {
-        gap: 20px;
+        width: 270px;
+        height: 340px;
     }
 
     .service {
         width: 300px !important;
+    }
+
+    .services {
+        gap: 20px;
     }
 
     .service .service_header {
@@ -1454,4 +1453,132 @@ footer .about_org {
 
 }
 
-@media screen and (m-witdh: 1000px) {}
+@media screen and (max-width: 768px) {
+    :root {
+        --max-width-container: 768px;
+    }
+
+    .work_on_result_block #koval_photo {
+        width: 238px;
+        height: 300px;
+    }
+
+    .service {
+        width: 450px !important;
+    }
+
+    .services .service {
+        height: 553px;
+    }
+
+    .tariffs .service {
+        height: 630px;
+    }
+
+    .tariffs .old_price .first_line, .tariffs .old_price .second_line {
+        left: 120px;
+    }
+
+    .header #menu {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    #default_screen_links {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 577px) {
+    :root {
+        --max-width-container: 576px;
+    }
+
+    .services .service {
+        height: 553px;
+    }
+
+    .tariffs .service {
+        height: 630px;
+    }
+
+    .tariffs .old_price .first_line, .tariffs .old_price .second_line {
+        left: 120px;
+    }
+
+    .form_block .main_content #footer_koval_photo {
+        display: none;
+    }
+
+    .map_block_content #google_map {
+        position: relative;
+    }
+
+    .map_block_content .main_content .info {
+        display: none;
+    }
+
+    .map_block_content .block_content {
+        padding: 0;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    footer {
+        padding: 10px 0;
+    }
+
+    footer .phone_and_social_links {
+        margin-bottom: -20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #small_screen_links {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #default_screen_links {
+        display: none;
+    }
+
+    #small_screen_links {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        gap: 15px;
+
+        padding-top: 36px;
+    }
+
+    #small_screen_links .phones {
+        flex-direction: column;
+    }
+
+    #small_screen_links .social_links .insta_tag {
+        align-self: flex-start;
+    }
+
+    .service {
+        width: 450px !important;
+    }
+
+    .block_content .block_title h1 {
+        font-size: 45px;
+    }
+
+    .block_content .block_title .block_subtitle {
+        position: relative;
+        bottom: 15px;
+    }
+
+}

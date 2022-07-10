@@ -8,7 +8,7 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            768: {
+            769: {
                 items: 2
             },
             1000: {
@@ -27,7 +27,7 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            768: {
+            769: {
                 items: 2
             },
             1000: {

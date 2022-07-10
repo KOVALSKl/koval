@@ -38,9 +38,36 @@
                         <li><a href="#about_my_work_block" class="menu_link">Отзывы</a></li>
                         <li><a href="#learning_process_block" class="menu_link">Процесс обучения</a></li>
                         <li><a href="#map_block_content" class="menu_link">Карта</a></li>
+                        <div class="phone_and_social_links" id="small_screen_links">
+                            <div class="phones">
+                                <div class="phone">+7 (928) 412-82-90</div>
+                                <div class="phone">+7 (995) 220-82-90</div>
+                            </div>
+                            <div class="social_links">
+                                <div class="social_images">
+                                    <a
+                                        href="https://api.whatsapp.com/send/?phone=89952208290&text&type=phone_number&app_absent=0">
+                                        <img src="./img/social-networks/whatsapp.png" />
+                                    </a>
+                                    <a href="http://vk.com/koval_instruktor123">
+                                        <img src="./img/social-networks/vk.png" />
+                                    </a>
+                                    <a href="https://t.me/koval_instruktor_krd">
+                                        <img src="./img/social-networks/telegram.png" />
+                                    </a>
+                                    <div class="dangerous_organization">
+                                        <a href="https://www.instagram.com/accounts/login/?next=/koval_instruktor123/">
+                                            <img src="./img/social-networks/instagram.png" />
+                                        </a>
+                                        <span>*</span>
+                                    </div>
+                                </div>
+                                <div class="insta_tag">@koval_instruktor123</div>
+                            </div>
+                        </div>
                     </ul>
                 </nav>
-                <div class="phone_and_social_links">
+                <div class="phone_and_social_links" id="default_screen_links">
                     <div class="phones">
                         <div class="phone">+7 (928) 412-82-90</div>
                         <div class="phone">+7 (995) 220-82-90</div>
@@ -221,7 +248,7 @@
                                         </div>
                                     </div>
                                     <div class="service_footer">
-                                        <a class="link_button _light" href="">
+                                        <a class="link_button _light" id="get-more-btn" href="#tariffs">
                                             Узнать подробнее ↓
                                         </a>
                                     </div>
@@ -287,13 +314,13 @@
                 </div>
                 <div class="tariffs_block block_container">
                     <div class="block_content">
-                        <div class="block_title">
+                        <div class="block_title" id="tariffs">
                             <h1>Обучение в автошколе</h1>
                             <h2 class="block_subtitle">Тарифы</h2>
                         </div>
                         <div class="main_content">
                             <div class="tariffs row">
-                                <div class="service col-md-4 col-xs-12">
+                                <div class="service col-md-4 col-sm-12">
                                     <div class="service_header">
                                         <span>Тариф </span> <span>«Стандарт»</span>
                                     </div>
@@ -320,7 +347,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="service col-md-4 col-xs-12">
+                                <div class="service col-md-4 col-sm-12">
                                     <div class="service_header">
                                         <span>Тариф </span> <span>«Оптимал»</span>
                                     </div>
@@ -354,7 +381,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="service col-md-4 col-xs-12">
+                                <div class="service col-md-4 col-sm-12">
                                     <div class="service_header">
                                         <span>Тариф </span> <span>«Эксклюзив»</span>
                                     </div>
@@ -686,15 +713,15 @@
                             <h1>И запишитесь на обучение</h1>
                             <h2 class="block_subtitle">Оставьте заявку</h2>
                         </div>
-                        <div class="main_content row">
-                            <form action="post" class="col-lg-8 col-md-7" id="contact_form">
+                        <div class="main_content">
+                            <form action="post" id="contact_form">
                                 <div class="form-control">
                                     <label for="name">Как к Вам обращаться?</label>
                                     <input type="text" name="name" placeholder="Имя">
                                 </div>
                                 <div class="form-control">
                                     <label for="phone">Введите Ваш номер телефона</label>
-                                    <input type="text" name="phone" placeholder="+7 (900) 232-87-65">
+                                    <input type="text" name="phone" placeholder="+7 (928) 412-82-90">
                                 </div>
                                 <div class="form-control" id="connect">
                                     <label for="conect_ways">Как с Вами связаться?</label>
@@ -737,7 +764,7 @@
                                     Записаться на обучение
                                 </button>
                             </form>
-                            <img src="./img/photoKoval.png" alt="" class="col-lg-4 col-md-5" style="height: 460px;">
+                            <img src="./img/photoKoval.png" alt="" id="footer_koval_photo" style="height: 460px;">
                         </div>
                     </div>
                 </div>

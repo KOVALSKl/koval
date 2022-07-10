@@ -1,11 +1,11 @@
 $(document).ready(function () {
-    $('.menu_list > li a').on('click', function (e) {
+    $('#menu > li > a, #footer_menu > li > a, #get-more-btn').on('click', function (e) {
         let href = $(this).attr('href');
         let offset = $(href).offset().top;
-        $('html, body').animate({
+        $("body, html").animate({
             scrollTop: offset
         }, {
-            duration: offset / 2,
+            duration: offset / 1.73,
             easing: "linear"
         });
 
