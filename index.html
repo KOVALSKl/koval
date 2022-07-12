@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 
 <head>
     <meta charset="UTF-8">
@@ -10,41 +10,41 @@
     <link rel="stylesheet" href="./scripts/owlCarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="./lightbox/css/lightbox.css">
     <link rel="stylesheet" href="./styles/slider.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="16x16" href="./img/favicon.ico">
     <title>Автошкола Коваль Александра</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header_menu">
-                <div class="header_menu_logo">
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="header__logo col-lg-3 col-md-5 col-sm-4 col-6">
                     <img src="./img/logo.png" id="logo" />
-                    <div class="logo_title">
+                    <div class="logo-title">
                         Коваль<br />
                         Автоинструктор
                     </div>
                 </div>
-                <nav class="menu_body">
+                <nav class="header__menu col-lg-7 col-md-2 col-sm-2 col-6">
                     <input id="menu__toggle" type="checkbox" />
                     <label class="menu__btn" for="menu__toggle">
                         <span></span>
                     </label>
-                    <ul class="menu_list" id="menu">
-                        <li><a href="#work_on_result_block" class="menu_link">Обо Мне</a></li>
-                        <li><a href="#services_block" class="menu_link">Услуги</a></li>
-                        <li><a href="#about_my_work_block" class="menu_link">Отзывы</a></li>
-                        <li><a href="#learning_process_block" class="menu_link">Процесс обучения</a></li>
-                        <li><a href="#map_block_content" class="menu_link">Карта</a></li>
-                        <div class="phone_and_social_links" id="small_screen_links">
+                    <ul class="menu__list" id="menu">
+                        <li class="item"><a href="#work_on_result_block" class="item-link">Обо Мне</a></li>
+                        <li class="item"><a href="#services_block" class="item-link">Услуги</a></li>
+                        <li class="item"><a href="#about_my_work_block" class="item-link">Отзывы</a></li>
+                        <li class="item"><a href="#learning_process_block" class="item-link">Процесс обучения</a></li>
+                        <li class="item"><a href="#map_block_content" class="item-link">Карта</a></li>
+                        <div class="menu__contact-info" id="small-screen-contact-info">
                             <div class="phones">
-                                <div class="phone">+7 (928) 412-82-90</div>
-                                <div class="phone">+7 (995) 220-82-90</div>
+                                <a href="tel:+79284128290" class="phone">+7 (928) 412-82-90</a>
+                                <a href="tel:+79952208290" class="phone">+7 (995) 220-82-90</a>
                             </div>
-                            <div class="social_links">
-                                <div class="social_images">
+                            <div class="menu__social_links">
+                                <div class="social-images">
                                     <a
                                         href="https://api.whatsapp.com/send/?phone=89952208290&text&type=phone_number&app_absent=0">
                                         <img src="./img/social-networks/whatsapp.png" />
@@ -62,18 +62,18 @@
                                         <span>*</span>
                                     </div>
                                 </div>
-                                <div class="insta_tag">@koval_instruktor123</div>
+                                <div class="insta-tag">@koval_instruktor123</div>
                             </div>
                         </div>
                     </ul>
                 </nav>
-                <div class="phone_and_social_links" id="default_screen_links">
+                <div class="menu__contact-info col-lg-2 col-md-5 col-sm-3 col-6" id="big-screens-contact-info">
                     <div class="phones">
-                        <div class="phone">+7 (928) 412-82-90</div>
-                        <div class="phone">+7 (995) 220-82-90</div>
+                        <a href="tel:+79284128290" class="phone">+7 (928) 412-82-90</a>
+                        <a href="tel:+79952208290" class="phone">+7 (995) 220-82-90</a>
                     </div>
-                    <div class="social_links">
-                        <div class="social_images">
+                    <div class="menu__social_links">
+                        <div class="social-images">
                             <a
                                 href="https://api.whatsapp.com/send/?phone=89952208290&text&type=phone_number&app_absent=0">
                                 <img src="./img/social-networks/whatsapp.png" />
@@ -95,749 +95,702 @@
                     </div>
                 </div>
             </div>
-        </header>
-        <main class="main">
-            <div class="main_content_container">
-                <div class="ten_lessons_block block_container">
-                    <div class="block_content">
-                        <h1 class="block_title">Научу водить <br />за 10 занятий</h1>
-                        <h2 class="block_subtitle">Заполни заявку и получи<br />первое занятие бесплатно</h2>
-                        <div class="link_button_container">
-                            <a class="link_button _dark" href="">
-                                Записать на первое занятие
-                            </a>
-                        </div>
-                        <div class="block_other_info">Занятие полностью бесплатное<br />
-                            и ни к чему не обязывает</div>
-                    </div>
-                </div>
-                <div class="achievements_block block_container">
-                    <div class="block_content">
-                        <div class="achievments_block_up">
-                            <div class="achievments row">
-                                <div class="achievments _couple col-lg-6 col-sm-12">
-                                    <div class="achievment">
-                                        <object data="./img/achievments/achievment1.svg" type="image/svg+xml" width="82"
-                                            height="82" class="aligncenter">
-                                            <img src="./img/achievments/achievment1.svg"
-                                                alt="Лучшая практика вождения в Краснодаре" />
-                                            <svg version="1.1" x="0px" y="0px" width="82" height="82"
-                                                viewBox="0 0 82 82" preserveAspectRatio="xMinYMin meet"></svg>
-                                        </object>
-                                        <div class="achievment_content">
-                                            Лучшая практика вождения <br />в Краснодаре
-                                        </div>
-                                    </div>
-                                    <div class="achievment">
-                                        <object data="./img/achievments/achievment2.svg" type="image/svg+xml" width="82"
-                                            height="82" class="aligncenter">
-                                            <img src="./img/achievments/achievment2.svg"
-                                                alt="Изучайте теорию онлайн лично с преподавателем" />
-                                            <svg version="1.1" x="0px" y="0px" width="82" height="82"
-                                                viewBox="0 0 82 82" preserveAspectRatio="xMinYMin meet"></svg>
-                                        </object>
-                                        <div class="achievment_content">
-                                            Изучайте теорию онлайн лично с преподавателем
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="achievments _couple col-lg-6 col-sm-12">
-                                    <div class="achievment ">
-                                        <object data="./img/achievments/achievment3.svg" type="image/svg+xml" width="82"
-                                            height="82" class="aligncenter">
-                                            <img src="./img/achievments/achievment3.svg"
-                                                alt="Выстраиваем график занятий лично под Вас" />
-                                            <svg version="1.1" x="0px" y="0px" width="82" height="82"
-                                                viewBox="0 0 82 82" preserveAspectRatio="xMinYMin meet"></svg>
-                                        </object>
-                                        <div class="achievment_content">
-                                            Выстраиваем график занятий лично под Вас
-                                        </div>
-                                    </div>
-                                    <div class="achievment ">
-                                        <object data="./img/achievments/achievment4.svg" type="image/svg+xml" width="82"
-                                            height="82" class="aligncenter">
-                                            <img src="./img/achievments/achievment4.svg"
-                                                alt="Предоставляем рассрочку на время обучения" />
-                                            <svg version="1.1" x="0px" y="0px" width="82" height="82"
-                                                viewBox="0 0 82 82" preserveAspectRatio="xMinYMin meet"></svg>
-                                        </object>
-                                        <div class="achievment_content">
-                                            Предоставляем рассрочку на время обучения
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="work_on_result_block block_container">
-                    <div class="block_content">
-                        <div class="block_title" id="work_on_result_block">
-                            <h1>Ценю ваше время</h1>
-                            <h2 class="block_subtitle">Работаю на результат</h2>
-                        </div>
-                        <img src="./img/koval_photo2.png" id="koval_photo" />
-                        <div class="main_content">
-                            <div class="main_info">
-                                <div class="biography">
-                                    <p>Всем привет, меня зовут Александр Коваль. <br />
-                                        Я инструктор по вождению и преподаватель автошколы Радуга.</p>
-                                    <br>
-                                    <p>
-                                        Я научу отлично водить автомобиль, расскажу о важных и сложных правилах
-                                        простым языком, мы будем активно и успешно бороться со страхом вождения.
-                                        <br>В обучение входит стандартная программа автошколы и моя <span
-                                            class="active">личная
-                                            методика</span>
-                                        обучения.
-                                        Помимо этого, для Вашего удобства, я собрал команду топ-инструкторов из разных
-                                        районов города
-                                    </p>
-                                    <br>
-                                    <p>Во время вождения с учениками мы отрабатываем</p>
-                                    <ul class="what_we_do_list">
-                                        <li>Сложные маршруты</li>
-                                        <li>Перекрёстки</li>
-                                        <li>Повороты и развороты</li>
-                                        <li>Круговое движение</li>
-                                        <li>Перестроения</li>
-                                        <li>Парковку в реальных условиях города</li>
-                                    </ul>
-                                </div>
-                                <div class="other_info">
-                                    <p>Записаться в школу можно в любой момент (даже прямо сейчас),
-                                        <br>а начать заниматься уже завтра
-                                    </p>
-                                    <div class="link_button_container">
-                                        <a class="link_button _light" href="">
-                                            Записаться в школу
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="services_block block_container">
-                    <div class="block_content">
-                        <div class="block_title" id="services_block">
-                            <h1>Которые я предоставляю</h1>
-                            <h2 class="block_subtitle">Услуги</h2>
-                        </div>
-                        <div class="main_content">
-                            <div class="services row">
-                                <div class="service col-md-4 col-sm-12">
-                                    <div class="service_header">
-                                        <span>Обучение </span> <span>в автошколе</span>
-                                    </div>
-                                    <div class="service_body">
-                                        <div class="sub_info">
-                                            <ul>
-                                                <li>Категория А</li>
-                                                <li>Категория B</li>
-                                            </ul>
-                                        </div>
-                                        <div class="main_info">
-                                            Обучение в автошколе происходит под моим личным контролем.
-                                            <br>Изучение теории в классе или индивидуально с преподавателем онлайн.
-                                            <br>График обучения выстраивается лично под Вас, поэтому вы можете
-                                            заниматься в
-                                            любое удобное для Вас время.
-                                            <br>После прохождения курса Вы сможете сдать все экзамены.
-                                        </div>
-                                    </div>
-                                    <div class="service_footer">
-                                        <a class="link_button _light" id="get-more-btn" href="#tariffs">
-                                            Узнать подробнее ↓
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="service col-md-4 col-sm-12">
-                                    <div class="service_header">
-                                        <span>Подготовка </span> <span>к экзаменам</span>
-                                    </div>
-                                    <div class="service_body">
-                                        <div class="main_info">
-                                            Во время занятий я практически перевоплащаюсь в инспектора:
-                                            <ul>
-                                                <li>Учу Вас ездить,<br>
-                                                    как на экзамене</li>
-                                                <li>Оцениваю ваши умения,<br>
-                                                    как на экзамене</li>
-                                                <li>Подготовка проходит на машине Lada Vetsa (механика), это одна из
-                                                    машин, на
-                                                    которой сдают экзамены в ГИБДД</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="service_footer">
-                                        <a class="link_button _light big" href="">
-                                            <span>Записаться</span> <span>на занятие</span>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="service col-md-4 col-sm-12">
-                                    <div class="service_header">
-                                        <span>Восстановление </span> <span>навыков</span>
-                                    </div>
-                                    <div class="service_body">
-                                        <div class="sub_info">
-                                            Я помогу откалибровать
-                                            навык вождения до идеала.
-                                        </div>
-                                        <div class="main_info">
-                                            Во время занятий вы сможете:
-                                            <ul>
-                                                <li>Прочувствовать габариты машины</li>
-                                                <li>Обрести уверенность за рулем</li>
-                                                <li>Разучить Ваши самые актуальные маршруты (работа/дом/учёба/магазины)
-                                                </li>
-                                                <li>Разобрать все виды парковки в реальных условиях города</li>
-                                                <li>Научиться думать за рулём, «читать» дорогу, просчитывать дорожные
-                                                    ситуации</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="service_footer">
-                                        <a class="link_button _light big" href="">
-                                            <span>Записаться</span> <span>на занятие</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <img src="./img/backgrounds/background_signs/steering_wheel.jpg" id="services_wheel" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tariffs_block block_container">
-                    <div class="block_content">
-                        <div class="block_title" id="tariffs">
-                            <h1>Обучение в автошколе</h1>
-                            <h2 class="block_subtitle">Тарифы</h2>
-                        </div>
-                        <div class="main_content">
-                            <div class="tariffs row">
-                                <div class="service col-md-4 col-sm-12">
-                                    <div class="service_header">
-                                        <span>Тариф </span> <span>«Стандарт»</span>
-                                    </div>
-                                    <div class="service_body">
-                                        <div class="sub_info">
-                                            В тариф входит полный курс автошколы:
-                                        </div>
-                                        <div class="main_info">
-                                            <ul>
-                                                <li>Теория онлайн лично с преподавателем</li>
-                                                <li>Уроки интенсивного вождения в городе</li>
-                                                <li>Изучение всех видов парковки</li>
-                                                <li>Постоянный доступ к онлайн обучению</li>
-                                                <li>Рассрочка</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="service_footer">
-                                        <div class="price">
-                                            Стоимость: 48 000₽
-                                        </div>
-                                        <a class="link_button _light big" href="">
-                                            <span>Записаться</span> <span>на <span>пробное</span> занятие</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="service col-md-4 col-sm-12">
-                                    <div class="service_header">
-                                        <span>Тариф </span> <span>«Оптимал»</span>
-                                    </div>
-                                    <div class="service_body">
-                                        <div class="sub_info">
-                                            Полный курс автошколы
-                                            + авторский курс по вождению
-                                            <br>(<span class="primary_lessons">5 занятий</span>)
-                                        </div>
-                                        <div class="main_info">
-                                            <ul>
-                                                <li>Курс «парковка за 7 секунд»</li>
-                                                <li>Психологическая подготовка</li>
-                                                <li>Теория онлайн лично с преподавателем</li>
-                                                <li>Уроки интенсивного вождения в городе</li>
-                                                <li>Постоянный доступ к онлайн обучению</li>
-                                                <li>Рассрочка</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="service_footer">
-                                        <div class="price">
-                                            <div class="old_price">Старая цена: 55 000₽
-                                                <div class="first_line"></div>
-                                                <div class="second_line"></div>
-                                            </div>
-                                            Стоимость: 50 000₽
-                                        </div>
-                                        <a class="link_button _light big" href="">
-                                            <span>Записаться</span> <span>на <span>пробное</span> занятие</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="service col-md-4 col-sm-12">
-                                    <div class="service_header">
-                                        <span>Тариф </span> <span>«Эксклюзив»</span>
-                                    </div>
-                                    <div class="service_body">
-                                        <div class="sub_info">
-                                            Полный курс автошколы
-                                            + авторский курс по вождению
-                                            <br>(<span class="primary_lessons">10 занятий</span>)
-                                        </div>
-                                        <div class="main_info">
-                                            <ul>
-                                                <li>Курс «парковка за 7 секунд»</li>
-                                                <li>Психологическая подготовка</li>
-                                                <li>Теория онлайн лично с преподавателем</li>
-                                                <li>Уроки интенсивного вождения в городе</li>
-                                                <li>Постоянный доступ к онлайн обучению</li>
-                                                <li>Рассрочка</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="service_footer">
-                                        <div class="price">
-                                            <div class="old_price">Старая цена: 60 000₽
-                                                <div class="first_line"></div>
-                                                <div class="second_line"></div>
-                                            </div>
-                                            Стоимость: 55 000₽
-                                        </div>
-                                        <a class="link_button _light big" href="">
-                                            <span>Записаться</span> <span>на <span>пробное</span> занятие</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <img src="./img/backgrounds/background_signs/main_road_sign.png" id="main_road_sign" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="studying_time_block block_container">
-                    <div class="block_content">
-                        <div class="main_content">
-                            Время обучения в автошколе зависит от Ваших успехов и занимает обычно 2 - 3 месяца
-                        </div>
-                    </div>
-                </div>
-                <div class="about_my_work_block block_container">
-                    <div class="block_content">
-                        <div class="block_title" id="about_my_work_block">
-                            <h1>О моей работе</h1>
-                            <h2 class="block_subtitle">Немного отзывов</h2>
-                        </div>
-                        <div class="main_content">
-                            <div class="owl-carousel owl-theme owl-light owl-pics" id="slider1">
-                                <div class="item">
-                                    <a href="./img/comments/01.jpg" data-lightbox="slider1">
-                                        <img src="./img/comments/01.jpg" />
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="./img/comments/03.jpg" data-lightbox="slider1">
-                                        <img src="./img/comments/02.jpg" />
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="./img/comments/04.jpg" data-lightbox="slider1">
-                                        <img src="./img/comments/03.jpg" />
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="./img/comments/05.jpg" data-lightbox="slider1">
-                                        <img src="./img/comments/04.jpg" />
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="./img/comments/06.jpg" data-lightbox="slider1">
-                                        <img src="./img/comments/05.jpg" />
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="./img/comments/07.jpg" data-lightbox="slider1">
-                                        <img src="./img/comments/06.jpg" />
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="./img/comments/08.jpg" data-lightbox="slider1">
-                                        <img src="./img/comments/07.jpg" />
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="./img/comments/09.jpg" data-lightbox="slider1">
-                                        <img src="./img/comments/08.jpg" />
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="./img/comments/10.jpg" data-lightbox="slider1">
-                                        <img src="./img/comments/09.jpg" />
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="./img/comments/01.jpg" data-lightbox="slider1">
-                                        <img src="./img/comments/10.jpg" />
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="./img/comments/01.jpg" data-lightbox="slider1">
-                                        <img src="./img/comments/11.jpg" />
-                                    </a>
-                                </div>
-                            </div>
-                            <img src="./img/backgrounds/background_signs/sled.png" id="first__footprint" />
-                            <img src="./img/backgrounds/background_signs/sled.png" id="second__footprint" />
-                            <img src="./img/backgrounds/background_signs/sled.png" id="therd__footprint" />
-                        </div>
-                    </div>
-                </div>
-                <div class="benefits_block block_container">
-                    <div class="block_content">
-                        <div class="main_content">
-                            <div class="benefits row">
-                                <div class="_benefits _couple col-lg-6 col-sm-12">
-                                    <div class="benefit">
-                                        <div class="benefit_title">
-                                            Надежно
-                                        </div>
-                                        <div class="benefit_body">
-                                            <ul>
-                                                <li>Я работаю инструктором <br>
-                                                    с 2009 года</li>
-                                                <li>8 из 10 моих учеников сдают экзамен с 1-го раза</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="benefit">
-                                        <div class="benefit_title">
-                                            Выгодно
-                                        </div>
-                                        <div class="benefit_body">
-                                            <ul>
-                                                <li>Рассрочка на все время Вашего обучения</li>
-                                                <li>Выстроим перссональный график платежей</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="_benefits _couple col-lg-6 col-sm-12">
-                                    <div class="benefit">
-                                        <div class="benefit_title">
-                                            Комфортно
-                                        </div>
-                                        <div class="benefit_body">
-                                            <ul>
-                                                <li>Сопровождение<br>
-                                                    до полного<br>
-                                                    получения прав</li>
-                                                <li>В моей команде топ-инструктора всего города</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="benefit">
-                                        <div class="benefit_title">
-                                            Удобно
-                                        </div>
-                                        <div class="benefit_body">
-                                            <ul>
-                                                <li>Изучайте теорию дома
-                                                    с личным преподавателем</li>
-                                                <li>Индивидуальный график изучения теории и вождения</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="learning_process_block block_container">
-                    <div class="block_content">
-                        <div class="block_title" id="learning_process_block">
-                            <h1>Вот так я учу водить</h1>
-                            <h2 class="block_subtitle">Процесс обучения</h2>
-                        </div>
-                        <div class="main_content">
-                            <div class="owl-carousel owl-theme owl-dark owl-vids" id="slider2">
-                                <div class="item">
-                                    <video controls loop poster="./videos/01_preview.png">
-                                        <source src="./videos/01.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="item">
-                                    <video controls loop poster="./videos/02_preview.png">
-                                        <source src="./videos/02.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="item">
-                                    <video controls loop poster="./videos/03_preview.png">
-                                        <source src="./videos/03.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="item">
-                                    <video controls loop poster="./videos/04_preview.png">
-                                        <source src="./videos/04.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="autoschool_licenses_block_title block_container">
-                    <div class="block_content">
-                        <div class="block_title">
-                            <h1>В которой я обучаю</h1>
-                            <h2 class="block_subtitle">Лицензии автошколы</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="autoschool_licenses_block_body block_container">
-                    <div class="block_content">
-                        <div class="main_content">
-                            <div class="licenses row">
-                                <div class="_licenses _couple col-lg-6 col-sm-12">
-                                    <div class="license">
-                                        <a href="./img/licenses/license1.jpg" data-lightbox="licenses">
-                                            <img src="./img/licenses/license1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="license">
-                                        <a href="./img/licenses/license2.jpg" data-lightbox="licenses">
-                                            <img src="./img/licenses/license2.jpg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="_licenses _couple col-lg-6 col-sm-12">
-                                    <div class="license">
-                                        <a href="./img/licenses/license3.jpg" data-lightbox="licenses">
-                                            <img src="./img/licenses/license3.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="license">
-                                        <a href="./img/licenses/license4.jpg" data-lightbox="licenses">
-                                            <img src="./img/licenses/license4.jpg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="roadtotherules block_container">
-                    <div class="block_content">
-                        <div class="block_title">
-                            <h1>До прав – рукой подать</h1>
-                            <h2 class="block_subtitle">Путь к правам</h2>
-                        </div>
-                        <div class="main_content">
-                            <div class="steps_to_rules">
-                                <ul id="steps" class="row">
-                                    <li class="step col-lg-6 col-sm-12">
-                                        <span class="step_number">1</span>
-                                        <div class="step_body">
-                                            Записываетесь<br>
-                                            на безоплатное занятие
-                                        </div>
-                                    </li>
-                                    <li class="step col-lg-6 col-sm-12">
-                                        <span class="step_number">3</span>
-                                        <div class="step_body">
-                                            Проходите обучение<br>
-                                            в автошколе
-                                        </div>
-                                    </li>
-                                    <li class="step col-lg-6 col-sm-12">
-                                        <span class="step_number">2</span>
-                                        <div class="step_body">
-                                            Проходите<br>
-                                            мед комиссию
-                                        </div>
-                                    </li>
-                                    <li class="step col-lg-6 col-sm-12">
-                                        <span class="step_number">4</span>
-                                        <div class="step_body">
-                                            Сдаёте экзамен<br>
-                                            и получаете права
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a class="link_button _dark" href="">
-                                Записаться на обучение
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="map_block_title block_container">
-                    <div class="block_content">
-                        <div class="block_title" id="map_block_content">
-                            <h1>Здесь наш автодром</h1>
-                            <h2 class="block_subtitle">Как нас найти?</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="map_block_content">
-                    <iframe id="google_map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2820.354825429297!2d39.05137915082686!3d45.01772207104226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f0500ca9989f15%3A0xb54352992d5fd358!2z0YPQuy4g0KHQtdC70LXQt9C90LXQstCwLCAxOTcvMywg0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwgMzUwMDU4!5e0!3m2!1sru!2sru!4v1656859182626!5m2!1sru!2sru"
-                        height="616" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="block_container">
-                        <div class="block_content">
-                            <div class="main_content">
-                                <div class="info">
-                                    <div class="info_body">
-                                        <div id="main_office_address">
-                                            Главный офис автошколы
-                                            и автодром, на котором я учу водить находиться по адресу <br>
-                                            <span class="address">ул. Селезнева 197/3</span>
-                                        </div>
-                                        <div id="selling_office_address">
-                                            Офис продаж находится по адресу: <br>
-                                            <span class="address">переулок Ленинский д.1</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="form_block block_container">
-                    <div class="block_content">
-                        <div class="block_title">
-                            <h1>И запишитесь на обучение</h1>
-                            <h2 class="block_subtitle">Оставьте заявку</h2>
-                        </div>
-                        <div class="main_content">
-                            <form action="post" id="contact_form">
-                                <div class="form-control">
-                                    <label for="name">Как к Вам обращаться?</label>
-                                    <input type="text" name="name" placeholder="Имя">
-                                </div>
-                                <div class="form-control">
-                                    <label for="phone">Введите Ваш номер телефона</label>
-                                    <input type="text" name="phone" placeholder="+7 (928) 412-82-90">
-                                </div>
-                                <div class="form-control" id="connect">
-                                    <label for="conect_ways">Как с Вами связаться?</label>
-                                    <div class="connect_controls_block">
-                                        <div class="radios">
-                                            <div class="form-check">
-                                                <label class="custom_radio_btn">
-                                                    <input class="form-check-input" type="radio" name="way"
-                                                        id="whats" />
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                                <label class="form-check-label" for="whats">
-                                                    WhatsApp
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <label class="custom_radio_btn">
-                                                    <input class="form-check-input" type="radio" name="way" id="call" />
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                                <label class="form-check-label" for="call">
-                                                    Позвонить
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-check">
-                                            <label class="custom_checkbox">
-                                                <input class="form-check-input" type="checkbox" value="" id="policy">
-                                                <span class="checkmark"></span>
-                                            </label>
-
-                                            <label class="form-check-label" for="policy">
-                                                Я даю согласие на обработку <br>
-                                                персональных данных
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="link_button _light" href="">
-                                    Записаться на обучение
-                                </button>
-                            </form>
-                            <img src="./img/photoKoval.png" alt="" id="footer_koval_photo" style="height: 460px;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="block_container">
-                <div class="block_content">
-                    <div class="main_content">
-                        <div class="header_menu">
-                            <div class="header_menu_logo">
-                                <img src="./img/logo.png" id="logo" />
-                                <div class="logo_title">
-                                    Коваль<br />
-                                    Автоинструктор
-                                </div>
-                            </div>
-                            <nav class="menu_body">
-                                <ul class="menu_list" id="footer_menu">
-                                    <li><a href="#work_on_result_block" class="menu_link">Обо Мне</a></li>
-                                    <li><a href="#services_block" class="menu_link">Услуги</a></li>
-                                    <li><a href="#about_my_work_block" class="menu_link">Отзывы</a></li>
-                                    <li><a href="#learning_process_block" class="menu_link">Процесс обучения</a></li>
-                                    <li><a href="#map_block_content" class="menu_link">Карта</a></li>
-                                </ul>
-                            </nav>
-                            <div class="phone_and_social_links">
-                                <div class="phones">
-                                    <div class="phone">+7 (928) 412-82-90</div>
-                                    <div class="phone">+7 (995) 220-82-90</div>
-                                </div>
-                                <div class="social_links">
-                                    <div class="social_images">
-                                        <a
-                                            href="https://api.whatsapp.com/send/?phone=89952208290&text&type=phone_number&app_absent=0">
-                                            <img src="./img/social-networks/whatsapp.png" />
-                                        </a>
-                                        <a href="http://vk.com/koval_instruktor123">
-                                            <img src="./img/social-networks/vk.png" />
-                                        </a>
-                                        <a href="https://t.me/koval_instruktor_krd">
-                                            <img src="./img/social-networks/telegram.png" />
-                                        </a>
-                                        <div class="dangerous_organization">
-                                            <a
-                                                href="https://www.instagram.com/accounts/login/?next=/koval_instruktor123/">
-                                                <img src="./img/social-networks/instagram.png" />
-                                            </a>
-                                            <span>*</span>
-                                        </div>
-                                    </div>
-                                    <div class="insta_tag">@koval_instruktor123</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="other">
-                            <div class="all_rights_reserved">© 2022 Все права защищены</div>
-                            <div class="about_org">* - запрещенная на териитории России организация</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-    </footer>
-    <div class="fixed-buttons">
-        <a href="" id="get-upper-button">
-            &#8963;
-        </a>
-        <div id="fixed-whatsapp-image">
-            <img src="./img/social-networks/whatsapp_white.png" />
         </div>
-    </div>
-    </div>
+    </header>
+    <main>
+        <div class="ten-lessons-block">
+            <div class="container">
+                <div class="row">
+                    <div class="block-title col-xl-5 col-lg-7 col-md-9 col-sm-12 col-11">
+                        <h1>Научу водить
+                            за 10 занятий</h1>
+                    </div>
+                    <div class="block-content col-xl-5 col-lg-6 col-md-8 col-sm-11 col-10">
+                        <div class="info">
+                            Заполни заявку и получи первое занятие безоплатно
+                        </div>
+                        <a href="#" class="link-button">
+                            Записаться на <span class="small-screens-disabled-item">первое</span> занятие
+                        </a>
+                        <div class="sub-info">
+                            Занятие полностью безоплатное <br>
+                            и ни к чему не обязывает
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="achievements-block">
+            <div class="container">
+                <div class="achievements row">
+                    <div class="achievement col-lg-3 col-md-6 col-sm-6">
+                        <object data="./img/achievements/achievement1.svg" type="image/svg+xml" width="82" height="82"
+                            class="aligncenter">
+                            <img src="./img/achievements/achievement1.svg"
+                                alt="Лучшая практика вождения в Краснодаре" />
+                            <svg version="1.1" x="0px" y="0px" width="82" height="82" viewBox="0 0 82 82"
+                                preserveAspectRatio="xMinYMin meet"></svg>
+                        </object>
+                        <div class="achievement_content">
+                            Лучшая практика вождения в Краснодаре
+                        </div>
+                    </div>
+                    <div class="achievement col-lg-3 col-md-6 col-sm-6">
+                        <object data="./img/achievements/achievement2.svg" type="image/svg+xml" width="82" height="82"
+                            class="aligncenter">
+                            <img src="./img/achievements/achievement2.svg"
+                                alt="Изучайте теорию онлайн лично с преподавателем" />
+                            <svg version="1.1" x="0px" y="0px" width="82" height="82" viewBox="0 0 82 82"
+                                preserveAspectRatio="xMinYMin meet"></svg>
+                        </object>
+                        <div class="achievement_content">
+                            Изучайте теорию онлайн лично с преподавателем
+                        </div>
+                    </div>
+                    <div class="achievement col-lg-3 col-md-6 col-sm-6">
+                        <object data="./img/achievements/achievement3.svg" type="image/svg+xml" width="82" height="82"
+                            class="aligncenter">
+                            <img src="./img/achievements/achievement3.svg"
+                                alt="Выстраиваем график занятий лично под Вас" />
+                            <svg version="1.1" x="0px" y="0px" width="82" height="82" viewBox="0 0 82 82"
+                                preserveAspectRatio="xMinYMin meet"></svg>
+                        </object>
+                        <div class="achievement_content">
+                            Выстраиваем график занятий лично под Вас
+                        </div>
+                    </div>
+                    <div class="achievement col-lg-3 col-md-6 col-sm-6">
+                        <object data="./img/achievements/achievement4.svg" type="image/svg+xml" width="82" height="82"
+                            class="aligncenter">
+                            <img src="./img/achievements/achievement4.svg"
+                                alt="Предоставляем рассрочку на время обучения" />
+                            <svg version="1.1" x="0px" y="0px" width="82" height="82" viewBox="0 0 82 82"
+                                preserveAspectRatio="xMinYMin meet"></svg>
+                        </object>
+                        <div class="achievement_content">
+                            Предоставляем рассрочку на время обучения
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-on-result-block">
+            <div class="container">
+                <div class="block-title">
+                    <h1>Ценю ваше время</h1>
+                    <h2 class="block-subtitle">Работаю на результат</h2>
+                </div>
+                <div class="block-content row">
+                    <div class="main-info col-xl-7 col-lg-8 col-md-7 col-sm-10">
+                        <p>
+                            Всем привет, меня зовут Александр Коваль. <br>
+                            Я инструктор по вождению и преподаватель автошколы Радуга.
+                        </p>
+
+                        <p>Я научу отлично водить автомобиль, расскажу о важных и сложных правилах
+                            простым языком, мы будем активно и успешно бороться со страхом вождения.
+                            В обучение входит стандартная программа автошколы и моя <span class="active-text">личная
+                                методика</span> обучения.
+                            Помимо этого, для Вашего удобства, я собрал команду топ-инструкторов из разных районов
+                            города</p>
+
+                        Во время вождения с учениками мы отрабатываем
+                        <ul class="content__list">
+                            <li>Сложные маршруты</li>
+                            <li>Перекрёстки</li>
+                            <li>Повороты и развороты</li>
+                            <li>Круговое движение</li>
+                            <li>Перестроения</li>
+                            <li>Парковку в реальных условиях города</li>
+                        </ul>
+                    </div>
+                    <div class="content__sub-info col-md-10 col-sm-6">
+                        <div class="sub__info-content">
+                            Записаться в школу можно в любой момент (даже прямо сейчас),
+                            а начать заниматься уже завтра
+                        </div>
+                        <a href="#" class="link-button">
+                            Записаться в школу
+                        </a>
+                    </div>
+                    <img src="./img/koval_photo2.png" class="col-md-4 col-sm-6 col-12" alt="Фото Инструктора"
+                        id="work-on-result-koval">
+                </div>
+            </div>
+        </div>
+        <div class="services-block">
+            <div class="container">
+                <div class="block-title">
+                    <h1>Которые я предоставляю</h1>
+                    <h2 class="block-subtitle">Услуги</h2>
+                </div>
+                <div class="services row">
+                    <div class="service col-xl-4 col-lg-4 col-md-12 col-sm-12 col-10">
+                        <div class="service__header">
+                            Обучение <br class="content-separator" />в автошколе
+                        </div>
+                        <div class="service__body">
+                            <div class="sub_info">
+                                <ul>
+                                    <li>Категория А</li>
+                                    <li>Категория B</li>
+                                </ul>
+                            </div>
+                            <div class="main_info">
+                                Обучение в автошколе происходит под моим личным контролем.
+                                <br>Изучение теории в классе или индивидуально с преподавателем онлайн.
+                                <br>График обучения выстраивается лично под Вас, поэтому вы можете
+                                заниматься в
+                                любое удобное для Вас время.
+                                <br>После прохождения курса Вы сможете сдать все экзамены.
+                            </div>
+                        </div>
+                        <div class="service__footer">
+                            <a class="link-button _light" id="get-more-btn" href="#tariffs">
+                                Узнать подробнее ↓
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service col-xl-4 col-lg-4 col-md-12 col-sm-12 col-10">
+                        <div class="service__header">
+                            Подготовка <br class="content-separator" /> к экзаменам
+                        </div>
+                        <div class="service__body">
+                            <div class="main_info">
+                                Во время занятий я практически перевоплащаюсь в инспектора:
+                                <ul>
+                                    <li>Учу Вас ездить,<br>
+                                        как на экзамене</li>
+                                    <li>Оцениваю ваши умения,<br>
+                                        как на экзамене</li>
+                                    <li>Подготовка проходит на машине Lada Vetsa (механика), это одна из
+                                        машин, на
+                                        которой сдают экзамены в ГИБДД</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="service__footer">
+                            <a class="link-button _light" href="">
+                                <span>Записаться</span> <span>на занятие</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service col-xl-4 col-lg-4 col-md-12 col-sm-12 col-10">
+                        <div class="service__header">
+                            Восстановление <br class="content-separator" />навыков
+                        </div>
+                        <div class="service__body">
+                            <div class="sub_info">
+                                Я помогу откалибровать <br>
+                                навык вождения до идеала.
+                            </div>
+                            <div class="main_info">
+                                Во время занятий вы сможете:
+                                <ul>
+                                    <li>Прочувствовать габариты машины</li>
+                                    <li>Обрести уверенность за рулем</li>
+                                    <li>Разучить Ваши самые актуальные маршруты (работа/дом/учёба/магазины)
+                                    </li>
+                                    <li>Разобрать все виды парковки в реальных условиях города</li>
+                                    <li>Научиться думать за рулём, «читать» дорогу, просчитывать дорожные
+                                        ситуации</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="service__footer">
+                            <a class="link-button _light" href="">
+                                <span>Записаться</span> <span>на занятие</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tariffs-block">
+            <div class="container">
+                <div class="block-title">
+                    <h1>Обучения в автошколе</h1>
+                    <h2 class="block-subtitle">Тарифы</h2>
+                </div>
+                <div class="tariffs row">
+                    <div class="service col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                        <div class="service__header">
+                            Тариф <br class="content-separator">«Стандарт»
+                        </div>
+                        <div class="service__body">
+                            <div class="sub_info">
+                                В тариф входит полный курс автошколы:
+                            </div>
+                            <div class="main_info">
+                                <ul>
+                                    <li>Теория онлайн лично с преподавателем</li>
+                                    <li>Уроки интенсивного вождения в городе</li>
+                                    <li>Изучение всех видов парковки</li>
+                                    <li>Постоянный доступ к онлайн обучению</li>
+                                    <li>Рассрочка</li>
+                                </ul>
+                            </div>
+                            <div class="price">
+                                Стоимость: 48 000₽
+                            </div>
+                        </div>
+                        <div class="service__footer">
+                            <a class="link-button _light" href="">
+                                Записаться на занятие
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                        <div class="service__header">
+                            Тариф <br class="content-separator">«Оптимал»
+                        </div>
+                        <div class="service__body">
+                            <div class="sub_info">
+                                Полный курс автошколы
+                                + авторский курс по вождению
+                                <br>(<span class="active-text">5 занятий</span>)
+                            </div>
+                            <div class="main_info">
+                                <ul>
+                                    <li>Курс «парковка за 7 секунд»</li>
+                                    <li>Психологическая подготовка</li>
+                                    <li>Теория онлайн лично с преподавателем</li>
+                                    <li>Уроки интенсивного вождения в городе</li>
+                                    <li>Постоянный доступ к онлайн обучению</li>
+                                    <li>Рассрочка</li>
+                                </ul>
+                            </div>
+                            <div class="price">
+                                <div class="old-price">Старая цена: 55 000₽
+                                    <div class="first-line"></div>
+                                    <div class="second-line"></div>
+                                </div>
+                                Стоимость: 50 000₽
+                            </div>
+                        </div>
+                        <div class="service__footer">
+                            <a class="link-button _light" href="">
+                                Записаться на занятие
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                        <div class="service__header">
+                            Тариф <br class="content-separator"> «Эксклюзив»
+                        </div>
+                        <div class="service__body">
+                            <div class="sub_info">
+                                Полный курс автошколы
+                                + авторский курс по вождению
+                                <br>(<span class="active-text">10 занятий</span>)
+                            </div>
+                            <div class="main_info">
+                                <ul>
+                                    <li>Курс «парковка за 7 секунд»</li>
+                                    <li>Психологическая подготовка</li>
+                                    <li>Теория онлайн лично с преподавателем</li>
+                                    <li>Уроки интенсивного вождения в городе</li>
+                                    <li>Постоянный доступ к онлайн обучению</li>
+                                    <li>Рассрочка</li>
+                                </ul>
+                            </div>
+                            <div class="price">
+                                <div class="old-price">Старая цена: 60 000₽
+                                    <span class="first-line"></span>
+                                    <span class="second-line"></span>
+                                </div>
+                                Стоимость: 55 000₽
+                            </div>
+                        </div>
+                        <div class="service__footer">
+                            <a class="link-button _light" href="">
+                                Записаться на занятие
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="studying-time-block">
+            <div class="container">
+                <div class="row">
+                    <div class="block-content col-md-11 col-sm-11">
+                        Время обучения в автошколе зависит
+                        от Ваших успехов
+                        и занимает обычно <br class="content-separator">
+                        2 - 3 месяца
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews-block">
+            <div class="container">
+                <div class="block-title">
+                    <h1>О моей работе</h1>
+                    <h2 class="block-subtitle">Немного отзывов</h2>
+                </div>
+                <div class="owl-carousel owl-theme owl-light owl-pics" id="slider1">
+                    <div class="item">
+                        <a href="./img/comments/01.jpg" data-lightbox="slider1">
+                            <img src="./img/comments/01.jpg" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./img/comments/03.jpg" data-lightbox="slider1">
+                            <img src="./img/comments/02.jpg" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./img/comments/04.jpg" data-lightbox="slider1">
+                            <img src="./img/comments/03.jpg" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./img/comments/05.jpg" data-lightbox="slider1">
+                            <img src="./img/comments/04.jpg" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./img/comments/06.jpg" data-lightbox="slider1">
+                            <img src="./img/comments/05.jpg" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./img/comments/07.jpg" data-lightbox="slider1">
+                            <img src="./img/comments/06.jpg" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./img/comments/08.jpg" data-lightbox="slider1">
+                            <img src="./img/comments/07.jpg" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./img/comments/09.jpg" data-lightbox="slider1">
+                            <img src="./img/comments/08.jpg" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./img/comments/10.jpg" data-lightbox="slider1">
+                            <img src="./img/comments/09.jpg" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./img/comments/01.jpg" data-lightbox="slider1">
+                            <img src="./img/comments/10.jpg" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./img/comments/01.jpg" data-lightbox="slider1">
+                            <img src="./img/comments/11.jpg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="benefits-block">
+            <div class="container">
+                <div class="benefits row">
+                    <div class="benefit col-xl-3 col-lg-4 col-md-5 col-sm-6">
+                        <div class="benefit__title">
+                            Надежно
+                        </div>
+                        <div class="benefit__body">
+                            <ul>
+                                <li>Я работаю инструктором <br>
+                                    с 2009 года</li>
+                                <li>8 из 10 моих учеников сдают экзамен с 1-го раза</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit__title">
+                            Выгодно
+                        </div>
+                        <div class="benefit__body">
+                            <ul>
+                                <li>Рассрочка на все время Вашего обучения</li>
+                                <li>Выстроим перссональный график платежей</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit__title">
+                            Комфортно
+                        </div>
+                        <div class="benefit__body">
+                            <ul>
+                                <li>Сопровождение<br>
+                                    до полного<br>
+                                    получения прав</li>
+                                <li>В моей команде топ-инструктора всего города</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit__title">
+                            Удобно
+                        </div>
+                        <div class="benefit__body">
+                            <ul>
+                                <li>Изучайте теорию дома
+                                    с личным преподавателем</li>
+                                <li>Индивидуальный график изучения теории и вождения</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="working-process-block">
+            <div class="container">
+                <div class="block-title _light">
+                    <h1>Вот так я учу водить</h1>
+                    <h2 class="block-subtitle">Процесс обучения</h2>
+                </div>
+                <div class="owl-carousel owl-theme owl-dark owl-vids" id="slider2">
+                    <div class="item">
+                        <video controls loop poster="./videos/01_preview.png">
+                            <source src="./videos/01.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video controls loop poster="./videos/02_preview.png">
+                            <source src="./videos/02.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video controls loop poster="./videos/03_preview.png">
+                            <source src="./videos/03.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video controls loop poster="./videos/04_preview.png">
+                            <source src="./videos/04.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="licenses-block">
+            <div class="block-title-background">
+                <div class="container">
+                    <div class="block-title">
+                        <h1>В которой я обучаю</h1>
+                        <h2 class="block-subtitle">
+                            Лицензии автошколы
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="licenses row">
+                    <div class="license col-xl-3 col-lg-6 col-md-5 col-12">
+                        <a href="./img/licenses/license1.jpg" data-lightbox="licenses">
+                            <img src="./img/licenses/license1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="license col-xl-3 col-lg-6 col-md-5 col-12">
+                        <a href="./img/licenses/license2.jpg" data-lightbox="licenses">
+                            <img src="./img/licenses/license2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="license col-xl-3 col-lg-6 col-md-5 col-12">
+                        <a href="./img/licenses/license3.jpg" data-lightbox="licenses">
+                            <img src="./img/licenses/license3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="license col-xl-3 col-lg-6 col-md-5 col-12">
+                        <a href="./img/licenses/license4.jpg" data-lightbox="licenses">
+                            <img src="./img/licenses/license4.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="road-to-the-rules-block">
+            <div class="container">
+                <div class="block-title _light">
+                    <h1>До прав – рукой подать</h1>
+                    <h2 class="block-subtitle">Путь к правам</h2>
+                </div>
+                <ul class="row" id="steps-to-rules">
+                    <li class="step col-xl-6 col-12">
+                        <span class="step__number">1</span>
+                        <div class="step__body">
+                            Записываетесь<br>
+                            на безоплатное занятие
+                        </div>
+                    </li>
+                    <li class="step col-xl-6 col-12">
+                        <span class="step__number">2</span>
+                        <div class="step__body">
+                            Проходите<br>
+                            мед комиссию
+                        </div>
+                    </li>
+                    <li class="step col-xl-6 col-12">
+                        <span class="step__number">3</span>
+                        <div class="step__body">
+                            Проходите обучение<br>
+                            в автошколе
+                        </div>
+                    </li>
+                    <li class="step col-xl-6 col-12">
+                        <span class="step__number">4</span>
+                        <div class="step__body">
+                            Сдаёте экзамен<br>
+                            и получаете права
+                        </div>
+                    </li>
+                    <a class="link-button col-md-6 col-sm-7 col-9" href="">
+                        Записаться на обучение
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="map-block">
+            <div class="container">
+                <div class="block-title">
+                    <h1>Здесь наш автодром</h1>
+                    <h2 class="block-subtitle">Как нас найти?</h2>
+                </div>
+                <div class="row">
+                    <div class="map-info col-xl-6 col-lg-6 col-md-6 col-sm-10 col-12">
+                        <p>
+                            Главный офис автошколы
+                            и автодром, на котором я учу водить находиться по адресу <br class="content-separator">
+                            <span class="active-text">ул. Селезнева 197/3</span>
+                        </p>
+                        <p>
+                            Офис продаж <br class="content-separator">
+                            находится по адресу:<span class="active-text"> переулок
+                                Ленинский д.1</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <iframe id="google-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2820.354825429297!2d39.05137915082686!3d45.01772207104226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f0500ca9989f15%3A0xb54352992d5fd358!2z0YPQuy4g0KHQtdC70LXQt9C90LXQstCwLCAxOTcvMywg0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwgMzUwMDU4!5e0!3m2!1sru!2sru!4v1656859182626!5m2!1sru!2sru"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-form-block">
+            <div class="container">
+                <div class="block-title">
+                    <h1>И запишитесь на обучение</h1>
+                    <h2 class="block-subtitle">Оставьте заявку</h2>
+                </div>
+                <div class="row">
+                    <form action="" method="post" class="col-xl-8 col-lg-7 col-md-6 col-12">
+                        <div class="form-control">
+                            <label for="name">Как к Вам обращаться?</label>
+                            <input type="text" name="name" placeholder="Имя">
+                        </div>
+                        <div class="form-control">
+                            <label for="phone">Введите Ваш номер телефона</label>
+                            <input type="text" name="phone" placeholder="+7 (928) 412-82-90">
+                        </div>
+                        <div class="form-control" id="connect">
+                            <label for="conect-ways">Как с Вами связаться?</label>
+                            <div class="connect-controls-block">
+                                <div class="radios">
+                                    <div class="form-check">
+                                        <label class="custom-radio-btn">
+                                            <input class="form-check-input" type="radio" name="way" id="whats" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="form-check-label" for="whats">
+                                            WhatsApp
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="custom-radio-btn">
+                                            <input class="form-check-input" type="radio" name="way" id="call" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="form-check-label" for="call">
+                                            Позвонить
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <label class="custom-checkbox">
+                                        <input class="form-check-input" type="checkbox" value="" id="policy">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label class="form-check-label" for="policy">
+                                        Я даю согласие на обработку <br>
+                                        персональных данных
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="link-button _light" href="">
+                            Записаться на обучение
+                        </button>
+                    </form>
+                    <div class="image-container col-xl-4 col-lg-5 col-md-6">
+                        <img src="./img/photoKoval.png" alt="Фото Инструктора" id="contact-form__koval" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer__logo col-xl-4 col-lg-5 col-md-6 col-sm-12 col-12">
+                    <div class="header__logo">
+                        <img src="./img/logo.png" id="logo" />
+                        <div class="logo-title">
+                            Коваль<br />
+                            Автоинструктор
+                        </div>
+                    </div>
+                    <div id="all-rights-reserved"> © 2022 Все права защищены</div>
+                </div>
+                <ul class="menu__list" id="menu">
+                    <li class="item"><a href="#work_on_result_block" class="item-link">Обо Мне</a></li>
+                    <li class="item"><a href="#services_block" class="item-link">Услуги</a></li>
+                    <li class="item"><a href="#about_my_work_block" class="item-link">Отзывы</a></li>
+                    <li class="item"><a href="#learning_process_block" class="item-link">Процесс обучения</a></li>
+                    <li class="item"><a href="#map_block_content" class="item-link">Карта</a></li>
+                </ul>
+                <div class="social-links col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="social-images">
+                        <a href="https://api.whatsapp.com/send/?phone=89952208290&text&type=phone_number&app_absent=0">
+                            <img src="./img/social-networks/whatsapp.png" />
+                        </a>
+                        <a href="http://vk.com/koval_instruktor123">
+                            <img src="./img/social-networks/vk.png" />
+                        </a>
+                        <a href="https://t.me/koval_instruktor_krd">
+                            <img src="./img/social-networks/telegram.png" />
+                        </a>
+                        <div class="dangerous_organization">
+                            <a href="https://www.instagram.com/accounts/login/?next=/koval_instruktor123/">
+                                <img src="./img/social-networks/instagram.png" />
+                            </a>
+                            <span>*</span>
+                        </div>
+                    </div>
+                    <div class="insta-tag">@koval_instruktor123</div>
+                </div>
+                <div class="dangerous-organization-info col-xl-5 col-lg-6 col-md-8 col-sm-12 col-12">* - запрещенная на
+                    териитории России
+                    организация</div>
+                <div class="phones col-md-4 col-sm-6 col-12">
+                    <a href="tel:+79284128290" class="phone">+7 (928) 412-82-90</a>
+                    <a href="tel:+79952208290" class="phone">+7 (995) 220-82-90</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./scripts/jquery-3.6.0.min.js"></script>
     <script src="./scripts/owlCarousel/owl.carousel.min.js"></script>
     <script src="./scripts/slider.js"></script>

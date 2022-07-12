@@ -7,14 +7,4 @@ $(document).ready(function () {
             button.removeClass('show');
         }
     });
-
-    button.on('click', function (e) {
-        e.preventDefault();
-
-        let scrollTop = $(window).scrollTop();
-        let seconds = scrollTop / 1.73;
-
-        $('html, body').animate({ scrollTop: 0 }, seconds);
-    });
-
 });
