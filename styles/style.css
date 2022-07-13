@@ -398,6 +398,8 @@ ul li::before {
     flex-wrap: wrap;
 
     justify-content: center;
+
+    gap: 11px 19px;
 }
 
 .achievements .achievement {
@@ -416,8 +418,6 @@ ul li::before {
     font-size: 20px;
 
     text-align: center;
-
-    margin: 0px 11px 30px 11px;
 }
 
 /* --------WORK ON RESULT BLOCK-------- */
@@ -587,7 +587,7 @@ ul li::before {
 .studying-time-block {
     background: url("../img/backgrounds/studying_time_back.jpg") top center no-repeat;
     background-size: cover;
-    padding: 160px 0px;
+    padding: 170px 0px;
 }
 
 .studying-time-block .row {
@@ -654,7 +654,7 @@ ul li::before {
     font-weight: 400;
     font-size: 16px;
 
-    padding: 0px 12px 56px 24px;
+    padding: 0px 12px 56px 18px;
 }
 
 .benefit__body ul {
@@ -692,11 +692,12 @@ ul li::before {
 
 .licenses {
     display: flex;
-    gap: 14px 30px;
+    row-gap: 14px;
 }
 
 .license {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .license>a>img {
@@ -757,7 +758,7 @@ ul li::before {
 .step .step__body {
     padding-top: 39px;
     padding-bottom: 40px;
-    padding-right: 47px;
+    padding-right: 40px;
 
     font-family: Montserrat;
     font-style: normal;
@@ -1211,15 +1212,80 @@ footer .phones {
 }
 
 @media screen and (min-width: 992px) {
+    .block-title h2.block-subtitle {
+        top: -35px;
+        left: 2px;
+        font-size: 36px;
+    }
+
     .contact-form-block .connect-controls-block {
         flex-direction: row;
         align-items: center;
     }
+
+    .licenses {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .studying-time-block .block-content .content-separator {
+        display: none;
+    }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .block-title h1 {
+        font-size: 60px;
+    }
+
     .achievements .achievement {
         margin: 0px 28px 30px 28px;
+    }
+
+    .services, .tariffs {
+        column-gap: 20px;
+    }
+
+    .service .service__header .content-separator {
+        display: initial;
+    }
+
+    .service {
+        width: 300px !important;
+    }
+
+    .service .service__header {
+        padding: 50px 0px 26px 21px;
+    }
+
+    .service .service__body {
+        padding: 0px 5px 18px 5px;
+    }
+
+    .service .first-line,
+    .service .second-line {
+        right: 77px;
+    }
+
+    .studying-time-block .block-content {
+        font-weight: 900;
+        font-size: 51px;
+    }
+
+    .benefits.row {
+        gap: 27px 63px;
+    }
+
+    .benefits.row .benefit {
+        width: 284px !important;
+    }
+
+    .license:nth-child(2n+1) {
+        justify-content: flex-end;
+    }
+
+    .license:nth-child(2n) {
+        justify-content: flex-start;
     }
 
     footer .row {
@@ -1255,12 +1321,31 @@ footer .phones {
 
     #big-screens-contact-info {
         display: flex;
-        justify-content: space-between;
+        order: 2;
+
+        flex-direction: row;
+        column-gap: 31px;
+    }
+
+    .header__menu {
+        order: 3;
     }
 }
 
 
 @media screen and (min-width: 1200px) {
+    .container {
+        width: 1144px !important;
+    }
+
+    .block-title h1, .studying-time-block .block-content {
+        font-size: 64px;
+    }
+
+    .block-title h2.block-subtitle {
+        top: -40px;
+    }
+
     #menu__toggle {
         display: none;
     }
@@ -1272,5 +1357,141 @@ footer .phones {
     .map-block .map-info {
         width: 559px !important;
         padding: 67px 52px;
+    }
+
+    .menu__btn {
+        display: none;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    #menu {
+        visibility: visible;
+        opacity: 1;
+        flex-direction: row;
+
+        position: initial;
+
+        padding: 0;
+
+        background: transparent;
+        width: initial;
+    }
+
+    #menu>li {
+        padding-left: 0;
+    }
+
+    .license>a>img {
+        width: 274px;
+        height: 405px;
+    }
+
+    #big-screens-contact-info {
+        display: flex;
+    }
+
+    .achievements-block {
+        background: url("../img/backgrounds/achievments_pc_back.png") top center no-repeat;
+        height: 274px;
+    }
+
+    .work-on-result-block {
+        padding-top: 10px;
+        position: relative;
+    }
+
+    .work-on-result-block .row {
+        padding-top: 0;
+    }
+
+    #work-on-result-koval {
+        width: 371px;
+        height: 460px;
+
+        position: absolute;
+        top: 60px;
+        right: 100px;
+    }
+
+    .services, .tariffs {
+        gap: 15px;
+    }
+
+    .service {
+        width: 370px !important;
+    }
+
+    .services .service .service__header {
+        padding-right: 20px;
+        padding-left: 44px;
+    }
+
+    .service .price .first-line,
+    .service .price .second-line {
+        right: 77px;
+    }
+
+    .benefits-block {
+        height: 611px;
+    }
+
+    .road-to-the-rules-block {
+        background: url("../img/backgrounds/studying_time_back.jpg") top center no-repeat;
+        height: 921px;
+
+        display: flex;
+        align-items: center;
+
+        padding: 0;
+    }
+
+    .road-to-the-rules-block .block-title {
+        padding: 0;
+    }
+
+    .road-to-the-rules-block #steps-to-rules {
+        flex-direction: row;
+        column-gap: 111px;
+    }
+
+    footer .row {
+        justify-content: space-evenly;
+        align-items: center;
+        row-gap: 0;
+
+        position: relative;
+    }
+
+    footer .row .footer__logo #all-rights-reserved {
+        font-weight: 500;
+        font-size: 20px;
+
+        position: relative;
+        bottom: -20px;
+    }
+
+    footer .row .dangerous-organization-info {
+        position: relative;
+        bottom: 0px;
+        right: -100px;
+    }
+
+    footer .row .social-links {
+        align-self: flex-end;
+        align-items: center;
+
+        position: relative;
+        top: 20px;
+    }
+
+    footer .row .phones {
+        row-gap: 5px;
+        position: absolute;
+
+        top: 0;
+        right: 0;
     }
 }
