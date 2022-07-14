@@ -81,6 +81,12 @@ main {
     background: transparent;
 }
 
+.link-button._light:hover {
+    color: var(--active-text-color);
+    border: 2.5px solid var(--active-text-color);
+    background: transparent;
+}
+
 ul {
     padding-left: 0 !important;
 }
@@ -114,6 +120,102 @@ ul li::before {
     font-size: 14px;
 
     opacity: 0.9;
+}
+
+.fixed-buttons {
+    position: fixed;
+    z-index: 10;
+    bottom: 30px;
+    right: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+}
+
+#get-upper-button {
+    height: 40px;
+    width: 44px;
+
+    text-align: center;
+
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 500;
+    text-decoration: none;
+
+    color: #979797;
+
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+#get-upper-button.show {
+    opacity: 1;
+}
+
+#fixed-whatsapp-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 98px;
+    height: 98px;
+
+    background: var(--widgets-color);
+
+    border-radius: 50%;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* --------BACKGROUND SIGNS-------- */
+
+.services.row, .tariffs.row {
+    position: relative;
+}
+
+#steering-wheel {
+    position: absolute;
+
+    bottom: -107px;
+    left: 300px;
+
+    width: 200px;
+
+    transform: rotate(15deg);
+}
+
+#main-road-sign {
+    position: absolute;
+
+    width: 201px;
+
+    top: -30px;
+    right: -85px;
+}
+
+.wheelprint {
+    position: absolute;
+    transform: rotate(-78.72deg);
+}
+
+#first__wheelprint {
+    bottom: 102px;
+    left: -294px;
+}
+
+#second__wheelprint {
+    bottom: -32px;
+    left: 417px;
+}
+
+#therd__wheelprint {
+    display: none;
+    bottom: -166px;
+    right: -100px;
 }
 
 /* --------HEADER-------- */
@@ -605,6 +707,13 @@ ul li::before {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* -------REVIEWS BLOCK-------- */
+
+.reviews-block .container {
+    position: relative;
+    z-index: 10;
+}
+
 /* -------BENEFITS BLOCK-------- */
 
 .benefits-block {
@@ -1066,6 +1175,11 @@ footer .phones {
         height: 361px;
     }
 
+    .services-block .block-title h2.block-subtitle,
+    .working-process-block .block-title h2.block-subtitle {
+        bottom: 0;
+    }
+
     .service {
         width: 300px !important;
     }
@@ -1081,6 +1195,10 @@ footer .phones {
     .service .price .old-price .first-line,
     .service .price .old-price .second-line {
         right: 24px;
+    }
+
+    .benefits-block .benefits.row {
+        padding-bottom: 124px;
     }
 
     .studying-time-block {
@@ -1137,6 +1255,27 @@ footer .phones {
         flex-direction: column;
         height: 170px;
     }
+
+    .fixed-buttons {
+        right: 15px;
+        bottom: 15px;
+
+        gap: 5px;
+    }
+
+    #get-upper-button {
+        font-size: 40px;
+    }
+
+    #fixed-whatsapp-image {
+        width: 44px;
+        height: 44px;
+    }
+
+    #fixed-whatsapp-image img {
+        width: 32px;
+        height: 32px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -1147,9 +1286,20 @@ footer .phones {
     footer .dangerous-organization-info {
         order: 4;
     }
+
+    #steering-wheel {
+        bottom: 546px;
+        left: 400px;
+    }
+
+    #main-road-sign {
+        top: 1225px;
+        right: 40px;
+    }
+
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
     .studying-time-block .block-content {
         font-size: 51px;
     }
@@ -1171,6 +1321,32 @@ footer .phones {
     footer .dangerous-organization-info {
         order: 4;
     }
+
+    #steering-wheel {
+        bottom: 546px;
+        left: 480px;
+    }
+
+    #main-road-sign {
+        top: 1225px;
+        right: 130px;
+    }
+
+    .fixed-buttons {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    #fixed-whatsapp-image {
+        width: 72px;
+        height: 72px;
+    }
+
+    #fixed-whatsapp-image img {
+        width: 56px;
+        height: 56px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -1230,6 +1406,10 @@ footer .phones {
 
     .studying-time-block .block-content .content-separator {
         display: none;
+    }
+
+    #therd__wheelprint {
+        display: initial;
     }
 }
 
@@ -1455,6 +1635,26 @@ footer .phones {
     .road-to-the-rules-block #steps-to-rules {
         flex-direction: row;
         column-gap: 111px;
+    }
+
+    .road-to-the-rules-block #steps-to-rules .step:nth-child(2) {
+        order: 3;
+    }
+
+    .road-to-the-rules-block #steps-to-rules .step:nth-child(3) {
+        order: 2;
+    }
+
+    .road-to-the-rules-block #steps-to-rules .step:nth-child(4) {
+        order: 4;
+    }
+
+    .road-to-the-rules-block #steps-to-rules .link-button {
+        order: 5;
+    }
+
+    .working-process-block {
+        padding-top: 60px;
     }
 
     footer .row {
