@@ -135,18 +135,17 @@ ul li::before {
     gap: 15px;
 }
 
-#get-upper-button {
+#get-upper-button img {
     height: 40px;
     width: 44px;
 
-    text-align: center;
+    filter: invert(45%);
+}
 
-    font-family: Montserrat;
-    font-size: 50px;
-    font-weight: 500;
+#get-upper-button {
+    height: 40px;
+
     text-decoration: none;
-
-    color: #979797;
 
     opacity: 0;
     transition: opacity 0.3s ease-out;
@@ -1122,6 +1121,16 @@ footer .phones {
         order: 1;
     }
 
+    #steering-wheel {
+        bottom: 746px;
+        left: 270px;
+    }
+
+    #main-road-sign {
+        top: 1345px;
+        right: 60px;
+    }
+
     .small-screens-disabled-item {
         display: none;
     }
@@ -1175,11 +1184,6 @@ footer .phones {
         height: 361px;
     }
 
-    .services-block .block-title h2.block-subtitle,
-    .working-process-block .block-title h2.block-subtitle {
-        bottom: 0;
-    }
-
     .service {
         width: 300px !important;
     }
@@ -1195,6 +1199,10 @@ footer .phones {
     .service .price .old-price .first-line,
     .service .price .old-price .second-line {
         right: 24px;
+    }
+
+    .services-block {
+        padding-top: 70px;
     }
 
     .benefits-block .benefits.row {
@@ -1263,18 +1271,18 @@ footer .phones {
         gap: 5px;
     }
 
-    #get-upper-button {
-        font-size: 40px;
+    #get-upper-button img {
+        width: 32px;
     }
 
     #fixed-whatsapp-image {
-        width: 44px;
-        height: 44px;
+        width: 56px;
+        height: 56px;
     }
 
     #fixed-whatsapp-image img {
-        width: 32px;
-        height: 32px;
+        width: 40px;
+        height: 40px;
     }
 }
 
