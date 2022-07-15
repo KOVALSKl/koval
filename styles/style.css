@@ -203,18 +203,18 @@ ul li::before {
 
 #first__wheelprint {
     bottom: 102px;
-    left: -294px;
+    left: -211px;
 }
 
 #second__wheelprint {
     bottom: -32px;
-    left: 417px;
+    left: 500px;
 }
 
 #therd__wheelprint {
     display: none;
     bottom: -166px;
-    right: -100px;
+    right: -184px;
 }
 
 /* --------HEADER-------- */
@@ -530,6 +530,10 @@ ul li::before {
     font-style: normal;
 }
 
+.work-on-result-block .container {
+    position: relative;
+}
+
 .work-on-result-block .block-content {
     padding-top: 40px;
 
@@ -687,8 +691,9 @@ ul li::before {
 
 .studying-time-block {
     background: url("../img/backgrounds/studying_time_back.jpg") top center no-repeat;
-    background-size: cover;
-    padding: 170px 0px;
+    height: 900px;
+    display: flex;
+    align-items: center;
 }
 
 .studying-time-block .row {
@@ -1572,6 +1577,10 @@ footer .phones {
         padding-left: 0;
     }
 
+    .ten-lessons-block {
+        background: url("../img/backgrounds/car_background.png") center -110px no-repeat;
+    }
+
     .license>a>img {
         width: 274px;
         height: 405px;
@@ -1601,7 +1610,7 @@ footer .phones {
 
         position: absolute;
         top: 60px;
-        right: 100px;
+        right: -40px;
     }
 
     .services, .tariffs {

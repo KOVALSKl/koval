@@ -96,10 +96,6 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
-    .owl-carousel .owl-item {
-        justify-content: center;
-    }
-
     .owl-dots {
         bottom: 15px;
     }
@@ -111,6 +107,12 @@
 
     .owl-carousel .owl-item video {
         width: 290px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+    .owl-carousel .owl-item {
+        justify-content: center;
     }
 }
 
